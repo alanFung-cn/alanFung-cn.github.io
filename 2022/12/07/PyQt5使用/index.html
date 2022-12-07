@@ -1,0 +1,1036 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/icon-mouse.ico">
+  <link rel="icon" type="image/png" href="/img/icon-mouse.ico">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#024e68">
+  <meta name="description" content="">
+  <meta name="author" content="织墨">
+  <meta name="keywords" content="">
+  <title>PyQt5学习记录 - 织墨</title>
+
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/github-markdown-css/4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    <link  rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/10.0.0/styles/github-gist.min.css" />
+  
+
+  
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_yg9cfy8wd6.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_pjno9b9zyxs.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script  src="/js/utils.js" ></script>
+<meta name="generator" content="Hexo 5.4.2"></head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>织墨</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="view intro-2" id="background" parallax=true
+         style="background: url('/img/bg2s.jpg') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="container text-center white-text fadeInUp">
+            <span class="h2" id="subtitle">
+              
+            </span>
+
+            
+              
+  <div class="mt-3 post-meta">
+    <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+    <time datetime="2022-12-07 16:19">
+      2022年12月7日 下午
+    </time>
+  </div>
+
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      3.2k 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      54
+       分钟
+    </span>
+  
+
+  
+  
+    
+      <!-- 不蒜子统计文章PV -->
+      <span id="busuanzi_container_page_pv" style="display: none">
+        <i class="iconfont icon-eye" aria-hidden="true"></i>
+        <span id="busuanzi_value_page_pv"></span> 次
+      </span>
+    
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-md">
+      <div class="container nopadding-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <div class="post-content mx-auto" id="post">
+            
+            <article class="markdown-body">
+              <h2 id="软件准备"><a href="#软件准备" class="headerlink" title="软件准备"></a>软件准备</h2><p>1.Python</p>
+<p>2.Vscode</p>
+<h2 id="环境配置"><a href="#环境配置" class="headerlink" title="环境配置"></a>环境配置</h2><h3 id="软件安装"><a href="#软件安装" class="headerlink" title="软件安装"></a>软件安装</h3><p>PyqQ5基于python环境，推荐使用python3.8版本,先进行python的安装，安装的时候要勾选“将环境变量添加到Path”中选项。Vscode没有什么特别的要求，正常安装即可。</p>
+<h3 id="PyQt包及相关工具安装"><a href="#PyQt包及相关工具安装" class="headerlink" title="PyQt包及相关工具安装"></a>PyQt包及相关工具安装</h3><p>安装PyQt相关的包，使用pip输入下面的代码</p>
+<pre><code class="hljs python"><span class="hljs-comment">#安装PyQt5</span>
+pip install PyQt5 -i https:pypi.douban.com/simple
+<span class="hljs-comment">#安装PyQt5-tools</span>
+pip install PyQt5-tools -i https:pypi.douban.com/simple
+<span class="hljs-comment"># 注：</span>
+<span class="hljs-comment"># 1、不用镜像的话则不需要加后面的  -i https:pypi.douban.com/simple  不过国内的镜像下载速度会更快</span>
+<span class="hljs-comment"># 2、PyQt5是核心部件，一些必要的库会打包在里面，但是里面不包含用于界面设计的QT Designer，因此需要下载PyQt5-tools</span></code></pre>
+
+<h3 id="QT-Designer的VsCode配置"><a href="#QT-Designer的VsCode配置" class="headerlink" title="QT Designer的VsCode配置"></a>QT Designer的VsCode配置</h3><p>完成上一步骤后，软件环境基本上已经搭建好了，下面需要配置QT Designer，使得其在VsCode软件中使用更加方便。</p>
+<ol>
+<li>首先，需要确定QT Designer的安装位置。<br>一般来说QT Designer的位置基于python，根据不同的版本分别位于<pre><code class="hljs python"><span class="hljs-comment"># PyQt 5.15.x 之前的版本</span>
+%Python_path%\Lib\site-packages|pyqt5_tools\Qt\<span class="hljs-built_in">bin</span>\desginer.exe
+
+<span class="hljs-comment"># PyQt 5.15.x 以及之后的版本</span>
+%Python_path%\Lib\site-packages\qt5_applications\Qt\<span class="hljs-built_in">bin</span>\designer.exe
+
+<span class="hljs-comment"># python的路径根据自己电脑来看，忘记了可以到环境变量里找到</span>
+<span class="hljs-comment"># 一般Python默认安装位置为：</span>
+C:\Users\Admin\AppData\Local\Programs\Python</code></pre></li>
+<li>在Vscode插件里找到PYQT Integration插件并下载</li>
+</ol>
+<p><img src="/img/pyqt5/1.png" srcset="/img/loading.gif" alt="pic1"></p>
+<ol start="3">
+<li>配置QT Designer在PYQT Integration插件中的路径，找到插件面板里的设置，将 QT Designer Path，这个选项的路径设置为QTDesigner的路径</li>
+</ol>
+<p><img src="/img/pyqt5/2.png" srcset="/img/loading.gif" alt="pic2"></p>
+<ol start="4">
+<li>配置好后，就可以在VsCode的文件树里右键之后找到相应的菜单</li>
+</ol>
+<p><img src="/img/pyqt5/3.png" srcset="/img/loading.gif" alt="pic3"></p>
+<p>选择的文件如果是.ui或者.py，则会有更丰富的选项，至此，PyQt5的开发环境已经搭建完成。</p>
+<h2 id="第一个程序"><a href="#第一个程序" class="headerlink" title="第一个程序"></a>第一个程序</h2><p>新建一个Python文件，在其中输入如下程序</p>
+<pre><code class="hljs python"><span class="hljs-keyword">import</span> PyQt5
+<span class="hljs-keyword">import</span> sys
+<span class="hljs-keyword">from</span> PyQt5.QtWidgets <span class="hljs-keyword">import</span> QWidget, QApplication,QMainWindow
+<span class="hljs-comment"># from Ui_untitled import Ui_MainWindow</span>
+
+app = QApplication(sys.argv)
+<span class="hljs-comment"># widget是小组件的</span>
+widget = QWidget()
+widget.resize(<span class="hljs-number">640</span>, <span class="hljs-number">480</span>)
+widget.setWindowTitle(<span class="hljs-string">&quot;Hello, PyQt5!&quot;</span>)
+widget.show()
+sys.exit(app.<span class="hljs-built_in">exec</span>())</code></pre>
+
+<p>就可以创建一个最简单的PyQt5程序，如下图：<br><img src="/img/pyqt5/4.png" srcset="/img/loading.gif" alt="pic4"></p>
+<h2 id="更复杂的程序"><a href="#更复杂的程序" class="headerlink" title="更复杂的程序"></a>更复杂的程序</h2><p>为了更加方便地进行页面的构建,QT Designer提供了图形化设计页面的方式，通过对于各种组件的拖拽就可以简单快捷地创建页面，比如下图的页面：</p>
+<p><img src="/img/pyqt5/5.png" srcset="/img/loading.gif" alt="pic5"></p>
+<p>创建好之后将页面文件保存到制定文件夹（其格式为.ui），在Vscode中打开，会发现这个格式的文件是类似xml的</p>
+<p><img src="/img/pyqt5/6.png" srcset="/img/loading.gif" alt="pic6"></p>
+<p>这种格式的文件python无法直接解析，因此需要使用前面安装好的插件将其转化成python文件：</p>
+<p><img src="/img/pyqt5/7.png" srcset="/img/loading.gif" alt="pic7"></p>
+<p>想要打开这个程序就需要额外再创建一个文件来调用此文件，如下</p>
+<pre><code class="hljs python"><span class="hljs-keyword">import</span> PyQt5
+<span class="hljs-keyword">import</span> sys
+<span class="hljs-keyword">from</span> PyQt5.QtWidgets <span class="hljs-keyword">import</span> QWidget, QApplication,QMainWindow
+<span class="hljs-keyword">from</span> Ui_untitled <span class="hljs-keyword">import</span> Ui_MainWindow
+
+<span class="hljs-comment"># python的类继承是放在括号里的，继承顺序从左往右</span>
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">MyWindow</span>(QMainWindow,Ui_MainWindow):
+    <span class="hljs-comment"># __init__是类的构造函数，固定名称</span>
+    <span class="hljs-keyword">def</span> <span class="hljs-title function_">__init__</span>(<span class="hljs-params">self, parent=<span class="hljs-literal">None</span></span>):
+        <span class="hljs-comment"># 调用父类的初始化</span>
+        <span class="hljs-built_in">super</span>(MyWindow,self).__init__(parent)
+        <span class="hljs-comment"># 调用.ui文件转化出的.py文件中的方法，直接在这里写也是一样的</span>
+        self.setupUi(self)
+
+<span class="hljs-comment"># 固定格式</span>
+<span class="hljs-keyword">if</span> __name__==<span class="hljs-string">&quot;__main__&quot;</span>:
+    app=QApplication(sys.argv)
+    myWin=MyWindow()
+    myWin.show()
+    sys.exit(app.exec_())
+</code></pre>
+
+<h2 id="程序示例-计时器"><a href="#程序示例-计时器" class="headerlink" title="程序示例-计时器"></a>程序示例-计时器</h2><h3 id="页面示例"><a href="#页面示例" class="headerlink" title="页面示例"></a>页面示例</h3><p><img src="/img/pyqt5/8.png" srcset="/img/loading.gif" alt="pic8"></p>
+<h3 id="功能简述"><a href="#功能简述" class="headerlink" title="功能简述"></a>功能简述</h3><p> 简单的 分：秒 计时器，通过两个Spin box控件设置时间，最大为59：59。</p>
+<p> 开始按钮：点击开始按钮开始计时，开始按钮变为暂停，再次点击暂停计时，暂停按钮变为继续。</p>
+<p> 还原按钮：点击还原按钮，计时器归零</p>
+<h3 id="代码示例"><a href="#代码示例" class="headerlink" title="代码示例"></a>代码示例</h3><h4 id="页面ui文件"><a href="#页面ui文件" class="headerlink" title="页面ui文件"></a>页面ui文件</h4><pre><code class="hljs xml"> <span class="hljs-comment">&lt;!-- 文件名：untitled.ui --&gt;</span>
+ <span class="hljs-meta">&lt;?xml version=<span class="hljs-string">&quot;1.0&quot;</span> encoding=<span class="hljs-string">&quot;UTF-8&quot;</span>?&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">ui</span> <span class="hljs-attr">version</span>=<span class="hljs-string">&quot;4.0&quot;</span>&gt;</span>
+ <span class="hljs-tag">&lt;<span class="hljs-name">class</span>&gt;</span>MainWindow<span class="hljs-tag">&lt;/<span class="hljs-name">class</span>&gt;</span>
+ <span class="hljs-tag">&lt;<span class="hljs-name">widget</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;QMainWindow&quot;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;MainWindow&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;windowModality&quot;</span>&gt;</span>
+   <span class="hljs-tag">&lt;<span class="hljs-name">enum</span>&gt;</span>Qt::NonModal<span class="hljs-tag">&lt;/<span class="hljs-name">enum</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">property</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;geometry&quot;</span>&gt;</span>
+   <span class="hljs-tag">&lt;<span class="hljs-name">rect</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">x</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-name">x</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">y</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-name">y</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">width</span>&gt;</span>359<span class="hljs-tag">&lt;/<span class="hljs-name">width</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">height</span>&gt;</span>241<span class="hljs-tag">&lt;/<span class="hljs-name">height</span>&gt;</span>
+   <span class="hljs-tag">&lt;/<span class="hljs-name">rect</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">property</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;minimumSize&quot;</span>&gt;</span>
+   <span class="hljs-tag">&lt;<span class="hljs-name">size</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">width</span>&gt;</span>359<span class="hljs-tag">&lt;/<span class="hljs-name">width</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">height</span>&gt;</span>241<span class="hljs-tag">&lt;/<span class="hljs-name">height</span>&gt;</span>
+   <span class="hljs-tag">&lt;/<span class="hljs-name">size</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">property</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;windowTitle&quot;</span>&gt;</span>
+   <span class="hljs-tag">&lt;<span class="hljs-name">string</span>&gt;</span>Time-meter<span class="hljs-tag">&lt;/<span class="hljs-name">string</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">property</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;autoFillBackground&quot;</span>&gt;</span>
+   <span class="hljs-tag">&lt;<span class="hljs-name">bool</span>&gt;</span>false<span class="hljs-tag">&lt;/<span class="hljs-name">bool</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">property</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;tabShape&quot;</span>&gt;</span>
+   <span class="hljs-tag">&lt;<span class="hljs-name">enum</span>&gt;</span>QTabWidget::Rounded<span class="hljs-tag">&lt;/<span class="hljs-name">enum</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">property</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">widget</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;QWidget&quot;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;centralwidget&quot;</span>&gt;</span>
+   <span class="hljs-tag">&lt;<span class="hljs-name">widget</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;QWidget&quot;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;gridLayoutWidget&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;geometry&quot;</span>&gt;</span>
+     <span class="hljs-tag">&lt;<span class="hljs-name">rect</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">x</span>&gt;</span>20<span class="hljs-tag">&lt;/<span class="hljs-name">x</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">y</span>&gt;</span>10<span class="hljs-tag">&lt;/<span class="hljs-name">y</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">width</span>&gt;</span>321<span class="hljs-tag">&lt;/<span class="hljs-name">width</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">height</span>&gt;</span>191<span class="hljs-tag">&lt;/<span class="hljs-name">height</span>&gt;</span>
+     <span class="hljs-tag">&lt;/<span class="hljs-name">rect</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">property</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">layout</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;QGridLayout&quot;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;gridLayout&quot;</span>&gt;</span>
+     <span class="hljs-tag">&lt;<span class="hljs-name">property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;leftMargin&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">number</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-name">number</span>&gt;</span>
+     <span class="hljs-tag">&lt;/<span class="hljs-name">property</span>&gt;</span>
+     <span class="hljs-tag">&lt;<span class="hljs-name">property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;topMargin&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">number</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-name">number</span>&gt;</span>
+     <span class="hljs-tag">&lt;/<span class="hljs-name">property</span>&gt;</span>
+     <span class="hljs-tag">&lt;<span class="hljs-name">item</span> <span class="hljs-attr">row</span>=<span class="hljs-string">&quot;0&quot;</span> <span class="hljs-attr">column</span>=<span class="hljs-string">&quot;0&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">layout</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;QHBoxLayout&quot;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;horizontalLayout&quot;</span>&gt;</span>
+       <span class="hljs-tag">&lt;<span class="hljs-name">item</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">widget</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;QSpinBox&quot;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;spin_minute&quot;</span>&gt;</span>
+         <span class="hljs-tag">&lt;<span class="hljs-name">property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;font&quot;</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">font</span>&gt;</span>
+           <span class="hljs-tag">&lt;<span class="hljs-name">family</span>&gt;</span>Arial<span class="hljs-tag">&lt;/<span class="hljs-name">family</span>&gt;</span>
+           <span class="hljs-tag">&lt;<span class="hljs-name">pointsize</span>&gt;</span>40<span class="hljs-tag">&lt;/<span class="hljs-name">pointsize</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">font</span>&gt;</span>
+         <span class="hljs-tag">&lt;/<span class="hljs-name">property</span>&gt;</span>
+         <span class="hljs-tag">&lt;<span class="hljs-name">property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;cursor&quot;</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">cursorShape</span>&gt;</span>ArrowCursor<span class="hljs-tag">&lt;/<span class="hljs-name">cursorShape</span>&gt;</span>
+         <span class="hljs-tag">&lt;/<span class="hljs-name">property</span>&gt;</span>
+         <span class="hljs-tag">&lt;<span class="hljs-name">property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;alignment&quot;</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">set</span>&gt;</span>Qt::AlignCenter<span class="hljs-tag">&lt;/<span class="hljs-name">set</span>&gt;</span>
+         <span class="hljs-tag">&lt;/<span class="hljs-name">property</span>&gt;</span>
+         <span class="hljs-tag">&lt;<span class="hljs-name">property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;buttonSymbols&quot;</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">enum</span>&gt;</span>QAbstractSpinBox::UpDownArrows<span class="hljs-tag">&lt;/<span class="hljs-name">enum</span>&gt;</span>
+         <span class="hljs-tag">&lt;/<span class="hljs-name">property</span>&gt;</span>
+         <span class="hljs-tag">&lt;<span class="hljs-name">property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;maximum&quot;</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">number</span>&gt;</span>59<span class="hljs-tag">&lt;/<span class="hljs-name">number</span>&gt;</span>
+         <span class="hljs-tag">&lt;/<span class="hljs-name">property</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">widget</span>&gt;</span>
+       <span class="hljs-tag">&lt;/<span class="hljs-name">item</span>&gt;</span>
+       <span class="hljs-tag">&lt;<span class="hljs-name">item</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">widget</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;QLabel&quot;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;label&quot;</span>&gt;</span>
+         <span class="hljs-tag">&lt;<span class="hljs-name">property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;maximumSize&quot;</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">size</span>&gt;</span>
+           <span class="hljs-tag">&lt;<span class="hljs-name">width</span>&gt;</span>30<span class="hljs-tag">&lt;/<span class="hljs-name">width</span>&gt;</span>
+           <span class="hljs-tag">&lt;<span class="hljs-name">height</span>&gt;</span>16777215<span class="hljs-tag">&lt;/<span class="hljs-name">height</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">size</span>&gt;</span>
+         <span class="hljs-tag">&lt;/<span class="hljs-name">property</span>&gt;</span>
+         <span class="hljs-tag">&lt;<span class="hljs-name">property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;font&quot;</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">font</span>&gt;</span>
+           <span class="hljs-tag">&lt;<span class="hljs-name">pointsize</span>&gt;</span>40<span class="hljs-tag">&lt;/<span class="hljs-name">pointsize</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">font</span>&gt;</span>
+         <span class="hljs-tag">&lt;/<span class="hljs-name">property</span>&gt;</span>
+         <span class="hljs-tag">&lt;<span class="hljs-name">property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;text&quot;</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">string</span>&gt;</span>:<span class="hljs-tag">&lt;/<span class="hljs-name">string</span>&gt;</span>
+         <span class="hljs-tag">&lt;/<span class="hljs-name">property</span>&gt;</span>
+         <span class="hljs-tag">&lt;<span class="hljs-name">property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;alignment&quot;</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">set</span>&gt;</span>Qt::AlignCenter<span class="hljs-tag">&lt;/<span class="hljs-name">set</span>&gt;</span>
+         <span class="hljs-tag">&lt;/<span class="hljs-name">property</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">widget</span>&gt;</span>
+       <span class="hljs-tag">&lt;/<span class="hljs-name">item</span>&gt;</span>
+       <span class="hljs-tag">&lt;<span class="hljs-name">item</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">widget</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;QSpinBox&quot;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;spin_second&quot;</span>&gt;</span>
+         <span class="hljs-tag">&lt;<span class="hljs-name">property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;font&quot;</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">font</span>&gt;</span>
+           <span class="hljs-tag">&lt;<span class="hljs-name">family</span>&gt;</span>Arial<span class="hljs-tag">&lt;/<span class="hljs-name">family</span>&gt;</span>
+           <span class="hljs-tag">&lt;<span class="hljs-name">pointsize</span>&gt;</span>40<span class="hljs-tag">&lt;/<span class="hljs-name">pointsize</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">font</span>&gt;</span>
+         <span class="hljs-tag">&lt;/<span class="hljs-name">property</span>&gt;</span>
+         <span class="hljs-tag">&lt;<span class="hljs-name">property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;cursor&quot;</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">cursorShape</span>&gt;</span>ArrowCursor<span class="hljs-tag">&lt;/<span class="hljs-name">cursorShape</span>&gt;</span>
+         <span class="hljs-tag">&lt;/<span class="hljs-name">property</span>&gt;</span>
+         <span class="hljs-tag">&lt;<span class="hljs-name">property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;alignment&quot;</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">set</span>&gt;</span>Qt::AlignCenter<span class="hljs-tag">&lt;/<span class="hljs-name">set</span>&gt;</span>
+         <span class="hljs-tag">&lt;/<span class="hljs-name">property</span>&gt;</span>
+         <span class="hljs-tag">&lt;<span class="hljs-name">property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;buttonSymbols&quot;</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">enum</span>&gt;</span>QAbstractSpinBox::UpDownArrows<span class="hljs-tag">&lt;/<span class="hljs-name">enum</span>&gt;</span>
+         <span class="hljs-tag">&lt;/<span class="hljs-name">property</span>&gt;</span>
+         <span class="hljs-tag">&lt;<span class="hljs-name">property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;maximum&quot;</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">number</span>&gt;</span>59<span class="hljs-tag">&lt;/<span class="hljs-name">number</span>&gt;</span>
+         <span class="hljs-tag">&lt;/<span class="hljs-name">property</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">widget</span>&gt;</span>
+       <span class="hljs-tag">&lt;/<span class="hljs-name">item</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">layout</span>&gt;</span>
+     <span class="hljs-tag">&lt;/<span class="hljs-name">item</span>&gt;</span>
+     <span class="hljs-tag">&lt;<span class="hljs-name">item</span> <span class="hljs-attr">row</span>=<span class="hljs-string">&quot;2&quot;</span> <span class="hljs-attr">column</span>=<span class="hljs-string">&quot;0&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">layout</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;QHBoxLayout&quot;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;horizontalLayout_2&quot;</span>&gt;</span>
+       <span class="hljs-tag">&lt;<span class="hljs-name">item</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">widget</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;QPushButton&quot;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;btn_Start&quot;</span>&gt;</span>
+         <span class="hljs-tag">&lt;<span class="hljs-name">property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;minimumSize&quot;</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">size</span>&gt;</span>
+           <span class="hljs-tag">&lt;<span class="hljs-name">width</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-name">width</span>&gt;</span>
+           <span class="hljs-tag">&lt;<span class="hljs-name">height</span>&gt;</span>50<span class="hljs-tag">&lt;/<span class="hljs-name">height</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">size</span>&gt;</span>
+         <span class="hljs-tag">&lt;/<span class="hljs-name">property</span>&gt;</span>
+         <span class="hljs-tag">&lt;<span class="hljs-name">property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;cursor&quot;</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">cursorShape</span>&gt;</span>PointingHandCursor<span class="hljs-tag">&lt;/<span class="hljs-name">cursorShape</span>&gt;</span>
+         <span class="hljs-tag">&lt;/<span class="hljs-name">property</span>&gt;</span>
+         <span class="hljs-tag">&lt;<span class="hljs-name">property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;text&quot;</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">string</span>&gt;</span>开始<span class="hljs-tag">&lt;/<span class="hljs-name">string</span>&gt;</span>
+         <span class="hljs-tag">&lt;/<span class="hljs-name">property</span>&gt;</span>
+         <span class="hljs-tag">&lt;<span class="hljs-name">property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;autoRepeat&quot;</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">bool</span>&gt;</span>false<span class="hljs-tag">&lt;/<span class="hljs-name">bool</span>&gt;</span>
+         <span class="hljs-tag">&lt;/<span class="hljs-name">property</span>&gt;</span>
+         <span class="hljs-tag">&lt;<span class="hljs-name">property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;autoDefault&quot;</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">bool</span>&gt;</span>false<span class="hljs-tag">&lt;/<span class="hljs-name">bool</span>&gt;</span>
+         <span class="hljs-tag">&lt;/<span class="hljs-name">property</span>&gt;</span>
+         <span class="hljs-tag">&lt;<span class="hljs-name">property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;default&quot;</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">bool</span>&gt;</span>false<span class="hljs-tag">&lt;/<span class="hljs-name">bool</span>&gt;</span>
+         <span class="hljs-tag">&lt;/<span class="hljs-name">property</span>&gt;</span>
+         <span class="hljs-tag">&lt;<span class="hljs-name">property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;flat&quot;</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">bool</span>&gt;</span>false<span class="hljs-tag">&lt;/<span class="hljs-name">bool</span>&gt;</span>
+         <span class="hljs-tag">&lt;/<span class="hljs-name">property</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">widget</span>&gt;</span>
+       <span class="hljs-tag">&lt;/<span class="hljs-name">item</span>&gt;</span>
+       <span class="hljs-tag">&lt;<span class="hljs-name">item</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">widget</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;QPushButton&quot;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;btn_Reload&quot;</span>&gt;</span>
+         <span class="hljs-tag">&lt;<span class="hljs-name">property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;minimumSize&quot;</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">size</span>&gt;</span>
+           <span class="hljs-tag">&lt;<span class="hljs-name">width</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-name">width</span>&gt;</span>
+           <span class="hljs-tag">&lt;<span class="hljs-name">height</span>&gt;</span>50<span class="hljs-tag">&lt;/<span class="hljs-name">height</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">size</span>&gt;</span>
+         <span class="hljs-tag">&lt;/<span class="hljs-name">property</span>&gt;</span>
+         <span class="hljs-tag">&lt;<span class="hljs-name">property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;cursor&quot;</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">cursorShape</span>&gt;</span>PointingHandCursor<span class="hljs-tag">&lt;/<span class="hljs-name">cursorShape</span>&gt;</span>
+         <span class="hljs-tag">&lt;/<span class="hljs-name">property</span>&gt;</span>
+         <span class="hljs-tag">&lt;<span class="hljs-name">property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;text&quot;</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">string</span>&gt;</span>还原<span class="hljs-tag">&lt;/<span class="hljs-name">string</span>&gt;</span>
+         <span class="hljs-tag">&lt;/<span class="hljs-name">property</span>&gt;</span>
+         <span class="hljs-tag">&lt;<span class="hljs-name">property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;autoRepeat&quot;</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">bool</span>&gt;</span>false<span class="hljs-tag">&lt;/<span class="hljs-name">bool</span>&gt;</span>
+         <span class="hljs-tag">&lt;/<span class="hljs-name">property</span>&gt;</span>
+         <span class="hljs-tag">&lt;<span class="hljs-name">property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;autoDefault&quot;</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">bool</span>&gt;</span>false<span class="hljs-tag">&lt;/<span class="hljs-name">bool</span>&gt;</span>
+         <span class="hljs-tag">&lt;/<span class="hljs-name">property</span>&gt;</span>
+         <span class="hljs-tag">&lt;<span class="hljs-name">property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;default&quot;</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">bool</span>&gt;</span>false<span class="hljs-tag">&lt;/<span class="hljs-name">bool</span>&gt;</span>
+         <span class="hljs-tag">&lt;/<span class="hljs-name">property</span>&gt;</span>
+         <span class="hljs-tag">&lt;<span class="hljs-name">property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;flat&quot;</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">bool</span>&gt;</span>false<span class="hljs-tag">&lt;/<span class="hljs-name">bool</span>&gt;</span>
+         <span class="hljs-tag">&lt;/<span class="hljs-name">property</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">widget</span>&gt;</span>
+       <span class="hljs-tag">&lt;/<span class="hljs-name">item</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">layout</span>&gt;</span>
+     <span class="hljs-tag">&lt;/<span class="hljs-name">item</span>&gt;</span>
+     <span class="hljs-tag">&lt;<span class="hljs-name">item</span> <span class="hljs-attr">row</span>=<span class="hljs-string">&quot;1&quot;</span> <span class="hljs-attr">column</span>=<span class="hljs-string">&quot;0&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">spacer</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;verticalSpacer&quot;</span>&gt;</span>
+       <span class="hljs-tag">&lt;<span class="hljs-name">property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;orientation&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">enum</span>&gt;</span>Qt::Vertical<span class="hljs-tag">&lt;/<span class="hljs-name">enum</span>&gt;</span>
+       <span class="hljs-tag">&lt;/<span class="hljs-name">property</span>&gt;</span>
+       <span class="hljs-tag">&lt;<span class="hljs-name">property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;sizeType&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">enum</span>&gt;</span>QSizePolicy::Maximum<span class="hljs-tag">&lt;/<span class="hljs-name">enum</span>&gt;</span>
+       <span class="hljs-tag">&lt;/<span class="hljs-name">property</span>&gt;</span>
+       <span class="hljs-tag">&lt;<span class="hljs-name">property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;sizeHint&quot;</span> <span class="hljs-attr">stdset</span>=<span class="hljs-string">&quot;0&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">size</span>&gt;</span>
+         <span class="hljs-tag">&lt;<span class="hljs-name">width</span>&gt;</span>20<span class="hljs-tag">&lt;/<span class="hljs-name">width</span>&gt;</span>
+         <span class="hljs-tag">&lt;<span class="hljs-name">height</span>&gt;</span>30<span class="hljs-tag">&lt;/<span class="hljs-name">height</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">size</span>&gt;</span>
+       <span class="hljs-tag">&lt;/<span class="hljs-name">property</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">spacer</span>&gt;</span>
+     <span class="hljs-tag">&lt;/<span class="hljs-name">item</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">layout</span>&gt;</span>
+   <span class="hljs-tag">&lt;/<span class="hljs-name">widget</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">widget</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">widget</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;QMenuBar&quot;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;menubar&quot;</span>&gt;</span>
+   <span class="hljs-tag">&lt;<span class="hljs-name">property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;geometry&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">rect</span>&gt;</span>
+     <span class="hljs-tag">&lt;<span class="hljs-name">x</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-name">x</span>&gt;</span>
+     <span class="hljs-tag">&lt;<span class="hljs-name">y</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-name">y</span>&gt;</span>
+     <span class="hljs-tag">&lt;<span class="hljs-name">width</span>&gt;</span>359<span class="hljs-tag">&lt;/<span class="hljs-name">width</span>&gt;</span>
+     <span class="hljs-tag">&lt;<span class="hljs-name">height</span>&gt;</span>23<span class="hljs-tag">&lt;/<span class="hljs-name">height</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">rect</span>&gt;</span>
+   <span class="hljs-tag">&lt;/<span class="hljs-name">property</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">widget</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">widget</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;QStatusBar&quot;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;statusbar&quot;</span>/&gt;</span>
+ <span class="hljs-tag">&lt;/<span class="hljs-name">widget</span>&gt;</span>
+ <span class="hljs-tag">&lt;<span class="hljs-name">resources</span>/&gt;</span>
+ <span class="hljs-tag">&lt;<span class="hljs-name">connections</span>/&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ui</span>&gt;</span></code></pre>
+
+<h4 id="由页面生成的Python文件"><a href="#由页面生成的Python文件" class="headerlink" title="由页面生成的Python文件"></a>由页面生成的Python文件</h4><pre><code class="hljs python"><span class="hljs-comment"># 文件名：Ui_untitled.py</span>
+<span class="hljs-comment"># -*- coding: utf-8 -*-</span>
+
+<span class="hljs-comment"># Form implementation generated from reading ui file &#x27;d:\12python\pyqt\Time-meter\untitled.ui&#x27;</span>
+<span class="hljs-comment">#</span>
+<span class="hljs-comment"># Created by: PyQt5 UI code generator 5.15.4</span>
+<span class="hljs-comment">#</span>
+<span class="hljs-comment"># WARNING: Any manual changes made to this file will be lost when pyuic5 is</span>
+<span class="hljs-comment"># run again.  Do not edit this file unless you know what you are doing.</span>
+
+
+<span class="hljs-keyword">from</span> PyQt5 <span class="hljs-keyword">import</span> QtCore, QtGui, QtWidgets
+
+
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">Ui_MainWindow</span>(<span class="hljs-title class_ inherited__">object</span>):
+    <span class="hljs-keyword">def</span> <span class="hljs-title function_">setupUi</span>(<span class="hljs-params">self, MainWindow</span>):
+        MainWindow.setObjectName(<span class="hljs-string">&quot;MainWindow&quot;</span>)
+        MainWindow.setWindowModality(QtCore.Qt.NonModal)
+        MainWindow.resize(<span class="hljs-number">359</span>, <span class="hljs-number">241</span>)
+        MainWindow.setMinimumSize(QtCore.QSize(<span class="hljs-number">359</span>, <span class="hljs-number">241</span>))
+        MainWindow.setAutoFillBackground(<span class="hljs-literal">False</span>)
+        MainWindow.setTabShape(QtWidgets.QTabWidget.Rounded)
+        self.centralwidget = QtWidgets.QWidget(MainWindow)
+        self.centralwidget.setObjectName(<span class="hljs-string">&quot;centralwidget&quot;</span>)
+        self.gridLayoutWidget = QtWidgets.QWidget(self.centralwidget)
+        self.gridLayoutWidget.setGeometry(QtCore.QRect(<span class="hljs-number">20</span>, <span class="hljs-number">10</span>, <span class="hljs-number">321</span>, <span class="hljs-number">191</span>))
+        self.gridLayoutWidget.setObjectName(<span class="hljs-string">&quot;gridLayoutWidget&quot;</span>)
+        self.gridLayout = QtWidgets.QGridLayout(self.gridLayoutWidget)
+        self.gridLayout.setContentsMargins(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>)
+        self.gridLayout.setObjectName(<span class="hljs-string">&quot;gridLayout&quot;</span>)
+        self.horizontalLayout = QtWidgets.QHBoxLayout()
+        self.horizontalLayout.setObjectName(<span class="hljs-string">&quot;horizontalLayout&quot;</span>)
+        self.spin_minute = QtWidgets.QSpinBox(self.gridLayoutWidget)
+        font = QtGui.QFont()
+        font.setFamily(<span class="hljs-string">&quot;Arial&quot;</span>)
+        font.setPointSize(<span class="hljs-number">40</span>)
+        self.spin_minute.setFont(font)
+        self.spin_minute.setCursor(QtGui.QCursor(QtCore.Qt.ArrowCursor))
+        self.spin_minute.setAlignment(QtCore.Qt.AlignCenter)
+        self.spin_minute.setButtonSymbols(QtWidgets.QAbstractSpinBox.UpDownArrows)
+        self.spin_minute.setMaximum(<span class="hljs-number">59</span>)
+        self.spin_minute.setObjectName(<span class="hljs-string">&quot;spin_minute&quot;</span>)
+        self.horizontalLayout.addWidget(self.spin_minute)
+        self.label = QtWidgets.QLabel(self.gridLayoutWidget)
+        self.label.setMaximumSize(QtCore.QSize(<span class="hljs-number">30</span>, <span class="hljs-number">16777215</span>))
+        font = QtGui.QFont()
+        font.setPointSize(<span class="hljs-number">40</span>)
+        self.label.setFont(font)
+        self.label.setAlignment(QtCore.Qt.AlignCenter)
+        self.label.setObjectName(<span class="hljs-string">&quot;label&quot;</span>)
+        self.horizontalLayout.addWidget(self.label)
+        self.spin_second = QtWidgets.QSpinBox(self.gridLayoutWidget)
+        font = QtGui.QFont()
+        font.setFamily(<span class="hljs-string">&quot;Arial&quot;</span>)
+        font.setPointSize(<span class="hljs-number">40</span>)
+        self.spin_second.setFont(font)
+        self.spin_second.setCursor(QtGui.QCursor(QtCore.Qt.ArrowCursor))
+        self.spin_second.setAlignment(QtCore.Qt.AlignCenter)
+        self.spin_second.setButtonSymbols(QtWidgets.QAbstractSpinBox.UpDownArrows)
+        self.spin_second.setMaximum(<span class="hljs-number">59</span>)
+        self.spin_second.setObjectName(<span class="hljs-string">&quot;spin_second&quot;</span>)
+        self.horizontalLayout.addWidget(self.spin_second)
+        self.gridLayout.addLayout(self.horizontalLayout, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">1</span>)
+        self.horizontalLayout_2 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_2.setObjectName(<span class="hljs-string">&quot;horizontalLayout_2&quot;</span>)
+        self.btn_Start = QtWidgets.QPushButton(self.gridLayoutWidget)
+        self.btn_Start.setMinimumSize(QtCore.QSize(<span class="hljs-number">0</span>, <span class="hljs-number">50</span>))
+        self.btn_Start.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.btn_Start.setAutoRepeat(<span class="hljs-literal">False</span>)
+        self.btn_Start.setAutoDefault(<span class="hljs-literal">False</span>)
+        self.btn_Start.setDefault(<span class="hljs-literal">False</span>)
+        self.btn_Start.setFlat(<span class="hljs-literal">False</span>)
+        self.btn_Start.setObjectName(<span class="hljs-string">&quot;btn_Start&quot;</span>)
+        self.horizontalLayout_2.addWidget(self.btn_Start)
+        self.btn_Reload = QtWidgets.QPushButton(self.gridLayoutWidget)
+        self.btn_Reload.setMinimumSize(QtCore.QSize(<span class="hljs-number">0</span>, <span class="hljs-number">50</span>))
+        self.btn_Reload.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.btn_Reload.setAutoRepeat(<span class="hljs-literal">False</span>)
+        self.btn_Reload.setAutoDefault(<span class="hljs-literal">False</span>)
+        self.btn_Reload.setDefault(<span class="hljs-literal">False</span>)
+        self.btn_Reload.setFlat(<span class="hljs-literal">False</span>)
+        self.btn_Reload.setObjectName(<span class="hljs-string">&quot;btn_Reload&quot;</span>)
+        self.horizontalLayout_2.addWidget(self.btn_Reload)
+        self.gridLayout.addLayout(self.horizontalLayout_2, <span class="hljs-number">2</span>, <span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">1</span>)
+        spacerItem = QtWidgets.QSpacerItem(<span class="hljs-number">20</span>, <span class="hljs-number">30</span>, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Maximum)
+        self.gridLayout.addItem(spacerItem, <span class="hljs-number">1</span>, <span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">1</span>)
+        MainWindow.setCentralWidget(self.centralwidget)
+        self.menubar = QtWidgets.QMenuBar(MainWindow)
+        self.menubar.setGeometry(QtCore.QRect(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">359</span>, <span class="hljs-number">23</span>))
+        self.menubar.setObjectName(<span class="hljs-string">&quot;menubar&quot;</span>)
+        MainWindow.setMenuBar(self.menubar)
+        self.statusbar = QtWidgets.QStatusBar(MainWindow)
+        self.statusbar.setObjectName(<span class="hljs-string">&quot;statusbar&quot;</span>)
+        MainWindow.setStatusBar(self.statusbar)
+
+        self.retranslateUi(MainWindow)
+        QtCore.QMetaObject.connectSlotsByName(MainWindow)
+
+    <span class="hljs-keyword">def</span> <span class="hljs-title function_">retranslateUi</span>(<span class="hljs-params">self, MainWindow</span>):
+        _translate = QtCore.QCoreApplication.translate
+        MainWindow.setWindowTitle(_translate(<span class="hljs-string">&quot;MainWindow&quot;</span>, <span class="hljs-string">&quot;Time-meter&quot;</span>))
+        self.label.setText(_translate(<span class="hljs-string">&quot;MainWindow&quot;</span>, <span class="hljs-string">&quot;:&quot;</span>))
+        self.btn_Start.setText(_translate(<span class="hljs-string">&quot;MainWindow&quot;</span>, <span class="hljs-string">&quot;开始&quot;</span>))
+        self.btn_Reload.setText(_translate(<span class="hljs-string">&quot;MainWindow&quot;</span>, <span class="hljs-string">&quot;还原&quot;</span>))
+</code></pre>
+
+<h4 id="主Python文件"><a href="#主Python文件" class="headerlink" title="主Python文件"></a>主Python文件</h4><pre><code class="hljs python"><span class="hljs-comment"># 文件名：Time-meter.py</span>
+<span class="hljs-keyword">from</span> PyQt5.QtWidgets <span class="hljs-keyword">import</span> QApplication,QMainWindow
+<span class="hljs-keyword">from</span> PyQt5.Qt <span class="hljs-keyword">import</span> QTimer
+<span class="hljs-keyword">from</span> Ui_untitled <span class="hljs-keyword">import</span> Ui_MainWindow
+<span class="hljs-keyword">import</span> sys
+
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">Time_meter</span>(QMainWindow,Ui_MainWindow):
+    <span class="hljs-comment"># 总倒计时的时间</span>
+    timeTotal=<span class="hljs-number">0</span>
+    <span class="hljs-comment"># 0是未开始或正在暂停中 1是正在倒计时</span>
+    timeIsStartFlag=<span class="hljs-number">0</span>
+    <span class="hljs-comment"># 0不是第一次 1是第一次</span>
+    timeIsFirst=<span class="hljs-number">0</span>
+    s=<span class="hljs-number">0</span>
+
+    <span class="hljs-keyword">def</span> <span class="hljs-title function_">__init__</span>(<span class="hljs-params">self</span>):
+        <span class="hljs-built_in">super</span>(Time_meter,self).__init__()
+        self.setupUi(self)
+
+        <span class="hljs-comment"># 初始化设置第一次的标志按钮</span>
+        self.timeIsFirst=<span class="hljs-number">1</span>
+
+        <span class="hljs-comment"># 连接函数</span>
+        self.btn_Start.clicked.connect(self.start)
+        self.btn_Reload.clicked.connect(self.reload)
+
+        <span class="hljs-comment"># 设置计时器</span>
+        self.timer=QTimer(self)
+        <span class="hljs-comment"># self.timer.setInterval(1000)</span>
+        self.timer.timeout.connect(self.onTimeOut)
+        
+    <span class="hljs-comment"># 还原按钮</span>
+    <span class="hljs-comment"># 类里的方法一定要传入一个参数self，当然取其他名字也可以，但是一般还是按照约定俗成取self</span>
+    <span class="hljs-keyword">def</span> <span class="hljs-title function_">reload</span>(<span class="hljs-params">self</span>):
+        self.spin_minute.setValue(<span class="hljs-number">0</span>)
+        self.spin_second.setValue(<span class="hljs-number">0</span>)
+        self.timeIsFirst=<span class="hljs-number">1</span>
+        self.timeTotal=<span class="hljs-number">0</span>
+        self.timeIsStartFlag=<span class="hljs-number">0</span>
+        self.btn_Start.setText(<span class="hljs-string">&quot;开始&quot;</span>)
+        self.timer.stop()
+        
+    <span class="hljs-comment"># 开始/暂停按钮</span>
+    <span class="hljs-keyword">def</span> <span class="hljs-title function_">start</span>(<span class="hljs-params">self</span>):
+        <span class="hljs-comment"># 第一次点击校验</span>
+        <span class="hljs-keyword">if</span> self.timeIsFirst==<span class="hljs-number">1</span>:
+            self.timeTotal=<span class="hljs-built_in">int</span>(self.spin_minute.value())*<span class="hljs-number">60</span>+<span class="hljs-built_in">int</span>(self.spin_second.value())
+            self.timeIsFirst=<span class="hljs-number">0</span>
+            self.timeIsStartFlag=<span class="hljs-number">1</span>
+            self.timer.start(<span class="hljs-number">1000</span>)
+            <span class="hljs-keyword">return</span>
+
+        <span class="hljs-keyword">if</span> self.timeIsStartFlag==<span class="hljs-number">0</span>:
+            self.timeIsStartFlag=<span class="hljs-number">1</span>
+        <span class="hljs-keyword">else</span>:
+            self.timeIsStartFlag=<span class="hljs-number">0</span>
+
+
+    <span class="hljs-keyword">def</span> <span class="hljs-title function_">onTimeOut</span>(<span class="hljs-params">self</span>):
+        <span class="hljs-keyword">if</span> self.timeIsStartFlag==<span class="hljs-number">1</span>:
+            self.btn_Start.setText(<span class="hljs-string">&quot;暂停&quot;</span>)
+            <span class="hljs-keyword">if</span> self.timeTotal!=<span class="hljs-number">0</span>:
+                self.timeTotal-=<span class="hljs-number">1</span>
+                minute=self.timeTotal//<span class="hljs-number">60</span>
+                second=self.timeTotal%<span class="hljs-number">60</span>
+                self.spin_minute.setValue(minute)
+                self.spin_second.setValue(second)
+            <span class="hljs-keyword">else</span>:
+                self.btn_Start.setText(<span class="hljs-string">&quot;开始&quot;</span>)
+                self.timeIsFirst=<span class="hljs-number">1</span>
+        <span class="hljs-keyword">else</span>:
+            self.btn_Start.setText(<span class="hljs-string">&quot;继续&quot;</span>)          
+
+<span class="hljs-keyword">if</span> __name__==<span class="hljs-string">&#x27;__main__&#x27;</span>:
+    app=QApplication(sys.argv)
+    myApp=Time_meter()
+    myApp.show()
+    sys.exit(app.exec_())</code></pre>
+
+<h3 id="使用PyInstaller打包成exe"><a href="#使用PyInstaller打包成exe" class="headerlink" title="使用PyInstaller打包成exe"></a>使用PyInstaller打包成exe</h3><h4 id="pyinstaller-安装"><a href="#pyinstaller-安装" class="headerlink" title="pyinstaller 安装"></a>pyinstaller 安装</h4><pre><code class="hljs python"><span class="hljs-comment"># 安装pyinstaller，使用国内的源</span>
+pip install -i https://pypi.tuna.tsinghua.edu.cn/simple pyinstaller</code></pre>
+
+<h4 id="pyinstaller-打包"><a href="#pyinstaller-打包" class="headerlink" title="pyinstaller 打包"></a>pyinstaller 打包</h4><pre><code class="hljs python"><span class="hljs-comment"># 打包</span>
+<span class="hljs-comment"># -i是图标参数，放在项目文件同文件夹即可</span>
+pyinstaller -F -w -i=<span class="hljs-string">&#x27;clock.ico&#x27;</span> Time-meter.py
+<span class="hljs-comment"># -F：打包成单文件   -D打包成动态库</span></code></pre>
+
+<h4 id="调用upx打包"><a href="#调用upx打包" class="headerlink" title="调用upx打包"></a>调用upx打包</h4><pre><code class="hljs python"><span class="hljs-comment"># upx需要先下载下来</span>
+<span class="hljs-comment"># --upx-dir=&#x27;D:\12python\pyqt\upx-4.0.0-win64&#x27; 这个参数的值地址即upx.exe的保存地址</span>
+pyinstaller -F -w -i=<span class="hljs-string">&#x27;clock.ico&#x27;</span> --upx-<span class="hljs-built_in">dir</span>=<span class="hljs-string">&#x27;D:\12python\pyqt\upx-4.0.0-win64&#x27;</span> Time-meter.py</code></pre>
+
+            </article>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                  <div class="post-meta mr-3">
+                    <i class="iconfont icon-category"></i>
+                    
+                      <a class="hover-with-bg" href="/categories/python/">python</a>
+                    
+                      <a class="hover-with-bg" href="/categories/pyqt5/">pyqt5</a>
+                    
+                      <a class="hover-with-bg" href="/categories/qt/">qt</a>
+                    
+                  </div>
+                
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/python/">python</a>
+                    
+                      <a class="hover-with-bg" href="/tags/pyqt5/">pyqt5</a>
+                    
+                      <a class="hover-with-bg" href="/tags/qt/">qt</a>
+                    
+                  </div>
+                
+              </div>
+              
+                <p class="note note-warning">本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！</p>
+              
+              
+                <div class="post-prevnext row">
+                  <div class="post-prev col-6">
+                    
+                    
+                  </div>
+                  <div class="post-next col-6">
+                    
+                    
+                      <a href="/2022/05/08/%E4%BF%A1%E6%81%AF%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E7%AC%94%E8%AE%B0/">
+                        <span class="hidden-mobile">信息基础知识笔记</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </div>
+                </div>
+              
+            </div>
+
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div id="tocbot"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+  </main>
+
+  
+    <a id="scroll-top-button" href="#" role="button">
+      <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+    </a>
+  
+
+  
+    <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+  
+
+  
+
+  
+
+  <footer class="mt-5">
+  <div class="text-center py-3">
+    <div>
+      <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a>
+      <i class="iconfont icon-love"></i>
+      <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener">
+        <span>Fluid</span></a>
+    </div>
+    
+  <div class="statistics">
+    
+    
+
+    
+      
+        <!-- 不蒜子统计PV -->
+        <span id="busuanzi_container_site_pv" style="display: none">
+            总访问量 
+            <span id="busuanzi_value_site_pv"></span>
+             次
+          </span>
+      
+      
+    
+  </div>
+
+
+    
+
+    
+  </div>
+</footer>
+
+<!-- SCRIPTS -->
+<script  src="https://cdn.staticfile.org/jquery/3.4.1/jquery.min.js" ></script>
+<script  src="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/js/bootstrap.min.js" ></script>
+<script  src="/js/debouncer.js" ></script>
+<script  src="/js/main.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/lazyload.js" ></script>
+  
+
+
+
+  <script defer src="https://cdn.staticfile.org/clipboard.js/2.0.6/clipboard.min.js" ></script>
+  <script  src="/js/clipboard-use.js" ></script>
+
+
+
+  <script defer src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" ></script>
+
+
+
+
+
+  <script  src="https://cdn.staticfile.org/tocbot/4.11.1/tocbot.min.js" ></script>
+  <script>
+    $(document).ready(function () {
+      var boardCtn = $('#board-ctn');
+      var boardTop = boardCtn.offset().top;
+
+      tocbot.init({
+        tocSelector: '#tocbot',
+        contentSelector: 'article.markdown-body',
+        headingSelector: 'h1,h2,h3,h4,h5,h6',
+        linkClass: 'tocbot-link',
+        activeLinkClass: 'tocbot-active-link',
+        listClass: 'tocbot-list',
+        isCollapsedClass: 'tocbot-is-collapsed',
+        collapsibleClass: 'tocbot-is-collapsible',
+        collapseDepth: 0,
+        scrollSmooth: true,
+        headingsOffset: -boardTop
+      });
+      if ($('.toc-list-item').length > 0) {
+        $('#toc').css('visibility', 'visible');
+      }
+    });
+  </script>
+
+
+
+  <script  src="https://cdn.staticfile.org/typed.js/2.0.11/typed.min.js" ></script>
+  <script>
+    var typed = new Typed('#subtitle', {
+      strings: [
+        '  ',
+        "PyQt5学习记录&nbsp;",
+      ],
+      cursorChar: "|",
+      typeSpeed: 60,
+      loop: false,
+    });
+    typed.stop();
+    $(document).ready(function () {
+      $(".typed-cursor").addClass("h2");
+      typed.start();
+    });
+  </script>
+
+
+
+  <script  src="https://cdn.staticfile.org/anchor-js/4.2.2/anchor.min.js" ></script>
+  <script>
+    anchors.options = {
+      placement: "right",
+      visible: "hover",
+      
+    };
+    var el = "h1,h2,h3,h4,h5,h6".split(",");
+    var res = [];
+    for (item of el) {
+      res.push(".markdown-body > " + item)
+    }
+    anchors.add(res.join(", "))
+  </script>
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    var path = "/local-search.xml";
+    var inputArea = document.querySelector("#local-search-input");
+    inputArea.onclick = function () {
+      searchFunc(path, 'local-search-input', 'local-search-result');
+      this.onclick = null
+    }
+  </script>
+
+
+
+  <script  src="https://cdn.staticfile.org/fancybox/3.5.7/jquery.fancybox.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+  <script>
+    $('#post img:not(.no-zoom img, img[no-zoom]), img[zoom]').each(
+      function () {
+        var element = document.createElement('a');
+        $(element).attr('data-fancybox', 'images');
+        $(element).attr('href', $(this).attr('src'));
+        $(this).wrap(element);
+      }
+    );
+  </script>
+
+
+
+
+
+
+
+  
+  
+    <script>
+      !function (e, t, a) {
+        function r() {
+          for (var e = 0; e < s.length; e++) s[e].alpha <= 0 ? (t.body.removeChild(s[e].el), s.splice(e, 1)) : (s[e].y--, s[e].scale += .004, s[e].alpha -= .013, s[e].el.style.cssText = "left:" + s[e].x + "px;top:" + s[e].y + "px;opacity:" + s[e].alpha + ";transform:scale(" + s[e].scale + "," + s[e].scale + ") rotate(45deg);background:" + s[e].color + ";z-index:99999");
+          requestAnimationFrame(r)
+        }
+
+        function n() {
+          var t = "function" == typeof e.onclick && e.onclick;
+          e.onclick = function (e) {
+            t && t(), o(e)
+          }
+        }
+
+        function o(e) {
+          var a = t.createElement("div");
+          a.className = "heart", s.push({
+            el: a,
+            x: e.clientX - 5,
+            y: e.clientY - 5,
+            scale: 1,
+            alpha: 1,
+            color: c()
+          }), t.body.appendChild(a)
+        }
+
+        function i(e) {
+          var a = t.createElement("style");
+          a.type = "text/css";
+          try {
+            a.appendChild(t.createTextNode(e))
+          } catch (t) {
+            a.styleSheet.cssText = e
+          }
+          t.getElementsByTagName("head")[0].appendChild(a)
+        }
+
+        function c() {
+          return "rgb(" + ~~(255 * Math.random()) + "," + ~~(255 * Math.random()) + "," + ~~(255 * Math.random()) + ")"
+        }
+
+        var s = [];
+        e.requestAnimationFrame = e.requestAnimationFrame || e.webkitRequestAnimationFrame || e.mozRequestAnimationFrame || e.oRequestAnimationFrame || e.msRequestAnimationFrame || function (e) {
+          setTimeout(e, 1e3 / 60)
+        }, i(".heart{width: 10px;height: 10px;position: fixed;background: #f00;transform: rotate(45deg);-webkit-transform: rotate(45deg);-moz-transform: rotate(45deg);}.heart:after,.heart:before{content: '';width: inherit;height: inherit;background: inherit;border-radius: 50%;-webkit-border-radius: 50%;-moz-border-radius: 50%;position: fixed;}.heart:after{top: -5px;}.heart:before{left: -5px;}"), n(), r()
+      }(window, document);
+    </script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
