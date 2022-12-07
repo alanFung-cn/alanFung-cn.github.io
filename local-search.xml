@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  
+  
+  
+  <entry>
+    <title>信息基础知识笔记</title>
+    <link href="/2022/05/08/%E4%BF%A1%E6%81%AF%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E7%AC%94%E8%AE%B0/"/>
+    <url>/2022/05/08/%E4%BF%A1%E6%81%AF%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E7%AC%94%E8%AE%B0/</url>
+    
+    <content type="html"><![CDATA[<h4 id="计算机硬件"><a href="#计算机硬件" class="headerlink" title="计算机硬件"></a>计算机硬件</h4><p>RAM：随机存储器，断电数据消失</p><p>ROM：只读存储器，只能读出数据，断电数据不会消失</p><p>内存数据读取最快</p><p>鼠标键盘都是输入设备</p><p>计算机组成：控制器、运算器、存储器、输入设备和输出设备</p><p>总线：按数据传输方式：并行传输总线和串行传输总线；</p><p>按传输信息类型：数据总线、地址总线、控制总线</p><p>软件：程序+文档+数据</p><p>计算机能直接识别的语言：机器语言</p><p>软件工程生命周期：规划-需求分析-软件设计-程序编码-软件测试-运行维护</p><p>字长：计算机在同一时间内处理的一组二进制数成为计算机的“字”，这组二进制数的位数就是“字长”；64位计算机=&gt;同一时间内可以处理64位二进制数的计算机</p><p>字节（byte）：计算机用于计量存储容量的<strong>基本单位</strong>；一个汉字占两个字节</p><p>位（bit）：存储数据或信息的<strong>最小单位</strong></p><h4 id="计算机数制与编码"><a href="#计算机数制与编码" class="headerlink" title="计算机数制与编码"></a>计算机数制与编码</h4><p>数制表示：11B-二进制；11O-八进制；11D-十进制；11H十六进制</p><p>ASCII码：48–0；65–A；97–a</p><p>汉字和中文标点占两个字节；英文和英文标点占一个字节</p><p>外码：又叫输入码，拼音码、五笔字型码等</p><p>内码：计算机内部存储、处理加工、传输汉字所用的由0和1符号组成的代码</p><p>字形码：汉字的输出码，用图形方式输出汉字，占用的字节数=点阵行数*点阵列数/8</p><p>原码：符号位加上真值的绝对值，即用第一位表示符号，其余位表示值</p><p>反码：正数的反码是其本身，负数反码是符号位不变，其他位取反</p><p>补码：正数的补码是其本身，负数补码是符号位不变，其他位取反后+1</p><p>+1=00000001原=00000001反=00000001补</p><p>-1=10000001原=11111110反=11111111补</p><h4 id="office工具"><a href="#office工具" class="headerlink" title="office工具"></a>office工具</h4><h5 id="excel"><a href="#excel" class="headerlink" title="excel"></a>excel</h5><p>默认对齐：文本类型左对齐，数字类型右对齐</p><p>1/4：默认格式下输入1/4显示1月4日</p><p>跨表引用：[工作簿名称]工作表名称!单元格地址=&gt;例如：[book1.xls]sheet1!$A$2</p><p>Rank函数：rank函数在进行排名的时候如果有两个相同大小的数值，则两个数字的排名是相同的</p><p>Count：count函数用来统计指定区域内数字类型数据的个数，其他类型（文本、错误值、逻辑值、空值）将被忽略</p><h4 id="多媒体"><a href="#多媒体" class="headerlink" title="多媒体"></a>多媒体</h4><h5 id="文件存储容量"><a href="#文件存储容量" class="headerlink" title="文件存储容量"></a>文件存储容量</h5><p>图像分辨率：水平方向和垂直方向的像素个数，表达方式为“水平像素数*垂直像素数”</p><pre><code class="hljs markdown">图片存储公式：图像尺寸<span class="hljs-emphasis">*位深/8    </span><span class="hljs-emphasis">//图像尺寸=长*</span>宽，位深其实就是用几个bit来表示颜色，如256色就是2^8次方需要8bit，常见的rgb则需要256<span class="hljs-emphasis">*256*</span>256即需要24bit声音存储容量公式：(采样频率<span class="hljs-emphasis">*量化位数*</span>声道数<span class="hljs-emphasis">*时间)/8</span><span class="hljs-emphasis"></span><span class="hljs-emphasis">视频存储容量公式：(画面尺寸*</span>色彩位数<span class="hljs-emphasis">*帧频*</span>时间)/8</code></pre><h4 id="数据库"><a href="#数据库" class="headerlink" title="数据库"></a>数据库</h4><p>数据库系统（DBS）包括数据库（DB）和数据库管理系统（DBMS）</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>信息基础知识</category>
+      
+      <category>笔记</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>信息基础知识</tag>
+      
+      <tag>笔记</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>码云GiteePages+Hexo搭建个人博客</title>
+    <link href="/2022/03/17/%E7%A0%81%E4%BA%91giteePages+Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
+    <url>/2022/03/17/%E7%A0%81%E4%BA%91giteePages+Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</url>
+    
+    <content type="html"><![CDATA[<h3 id="半小时教你白嫖一个个人博客！"><a href="#半小时教你白嫖一个个人博客！" class="headerlink" title="半小时教你白嫖一个个人博客！"></a>半小时教你白嫖一个个人博客！</h3><p>使用Hexo+Gitee(Github)来搭建个人博客是一种经济有效的方式，Gitee提供了免费的静态网页托管服务，也就是说它可以帮你把html页面展示出来，但是我们直接用html来写博客显然是不现实的，所以说就需要使用Hexo工具来帮助我们把md文档转换成html文件来进行展示。有了Hexo工具的帮助，即便是没有代码基础的小白也是可以快速的搭建专属自己的博客的。</p><hr><h2 id="环境准备"><a href="#环境准备" class="headerlink" title="环境准备"></a>环境准备</h2><p>首先需要在自己的电脑上新建一个文件夹，笔者的电脑环境是win10（64位）的，所以本文章以此环境为例。</p><p>接下来就需要准备几个比较重要的工具：</p><ul><li>Git，这个软件主要用来将本地的文件传到Gitee上，可从官网下载<a href="https://git-scm.com/">https://git-scm.com/</a></li><li>Tortoise Git，小乌龟，这个是辅助Git的小工具，非必须，官网下载速度较慢，可自行找第三方下载</li><li>Node.js，Hexo运行依赖这个库，可从官网下载<a href="https://nodejs.org/zh-cn/">https://nodejs.org/zh-cn/</a></li></ul><p>以上工具下载后安装即可，其中有一点要注意，要想成功地将本地的文件通过Git部署推送到Gitee上，需要在本地和Gitee上都进行相应的配置，即将本地电脑的SSH密钥添加到Gitee你的账号中，这样才能进行Git的推送，因为这部分内容在本篇文章里不是重点，因此不再赘述。</p><p><em>注：Git安装成功后在任意文件夹右键菜单都会出现 <strong>Git Bash Here</strong> 的选项</em></p><h2 id="Hexo在本地的安装"><a href="#Hexo在本地的安装" class="headerlink" title="Hexo在本地的安装"></a>Hexo在本地的安装</h2><p>经过上面的步骤，环境布置已经基本完成，下面就要开始搭建网站了，Hexo为了方便用户使用，可以在本地进行调试，所以我们先在本地将其调试完成，然后在进行远端的推送部署。</p><h4 id="Hexo下载与安装"><a href="#Hexo下载与安装" class="headerlink" title="Hexo下载与安装"></a>Hexo下载与安装</h4><p>笔者这里比较推荐使用Vscode这个软件，在Vscode里打开你准备好的文件夹，在此文件夹下打开Vscode中的终端，在里面输入下面的代码：</p><pre><code class="hljs C">npm install hexo-cli -g<span class="hljs-comment">//NPM是跟随Node.js一起下载下来的工具，它是一个包管理工具，允许用户从NPM服务器下载别人编写的第三方包到本地使用，也允许用户将自己编写的包或插件上传到NPM服务器供别人下载使用。</span></code></pre><p>hexo-cli是hexo框架的脚手架工具，可以自动下载依赖，等待下载完成。</p><p>下载完成后再输入下面的代码，这行代码的用途是在你选定的这个文件夹里初始化生成Hexo的相关目录：</p><pre><code class="hljs csharp">hexo <span class="hljs-keyword">init</span></code></pre><p>到这里我们的第一个Hexo项目基本上就完成了。</p><p>Hexo里主要有以下几个命令</p><pre><code class="hljs awk">hexo clean<span class="hljs-regexp">//</span>清空之前生成的hexo网站文件hexo g<span class="hljs-regexp">//</span>生成新的网站文件hexo s<span class="hljs-regexp">//</span>启动本地服务器，控制台里会给出一个本地地址hexo d<span class="hljs-regexp">//</span>将本地文件部署到远程</code></pre><p>下面就来在本地运行一下看看效果，按顺序输入下面几个命令：</p><pre><code class="hljs ebnf"><span class="hljs-attribute">hexo clean</span><span class="hljs-attribute">hexo g</span><span class="hljs-attribute">hexo s</span></code></pre><p>然后在浏览器打开 <em>localhost:4000</em> 这个地址，就可以看到Hexo的初始页面了：</p><p><img src="/img/blogCreate/first_page.png"></p><p>这里推荐做两个bat文件，把上面的几个命令结合起来，不用每次都要重新输入，一个用来本地预览：</p><pre><code class="hljs dts">hexo clean<span class="hljs-variable">&amp;hexo</span> g<span class="hljs-variable">&amp;hexo</span> s</code></pre><p>另一个用来部署推送至远端：</p><pre><code class="hljs dts">hexo clean<span class="hljs-variable">&amp;hexo</span> g<span class="hljs-variable">&amp;hexo</span> d</code></pre><h3 id="Hexo主题使用"><a href="#Hexo主题使用" class="headerlink" title="Hexo主题使用"></a>Hexo主题使用</h3><p>Hexo最迷人的地方在与它的便捷性和美观性，它拥有丰富的模板供使用，你可以访问他们的主题页面(<a href="https://hexo.io/themes/">https://hexo.io/themes/</a>)，来进行主题的选择，比如这里我选择这个主题：</p><p><img src="/img/blogCreate/theme1.png"></p><p>将这个主题对应的zip下载下来：</p><p><img src="/img/blogCreate/theme2.png"></p><p>解压放到根目录的themes文件夹下</p><p><img src="/img/blogCreate/theme3.png"></p><p>找到在根目录的 <em>_config.yml</em> 配置文件：</p><p><img src="/img/blogCreate/config_outside.png"></p><p>在配置文件中将主题改为你刚刚下载的主题：</p><p><img src="/img/blogCreate/theme4.png"></p><p>保存配置文件，本地运行，在对应的地址内就可以看到主题变成了我们刚刚下载的主题：</p><p><img src="/img/blogCreate/theme5.png"></p><p>这样一个主题就更换完成了，更换其他主题也是同样的方法。</p><h2 id="Hexo的推送"><a href="#Hexo的推送" class="headerlink" title="Hexo的推送"></a>Hexo的推送</h2><p>前面我们已经在本地完成了hexo页面的创建和主题的更换，下面我们就要将我们创建好的内容推送到Gitee上了。</p><p>在Gitee上要准备一个仓库<strong>（注：如果想要生成的网站是自己专属的域名的话，仓库名最好和你个人空间名一致，并且这样的名字只有一个，意思就是你一个账号只能有一个这样的网站）</strong>，刚创建的仓库不能设置为开源，需要在创建后再将权限改为公开，否则无法访问。</p><p>创建好的仓库是空的，但是会有一个地址：</p><p><img src="/img/blogCreate/upload0.png"></p><p>我们复制这个地址，然后找到上面出现过的根目录下的配置文件 _config.yml，将刚刚复制的地址粘贴到deploy里的repository中，如图：</p><p><img src="/img/blogCreate/upload1.png"></p><p>这样我们就完成了地址的配置，下面我们就要开始推送了，首先下载安装Hexo向Git推送数据的工具，在命令行输入下面的代码</p><pre><code class="hljs ada">npm install hexo-deployer-git <span class="hljs-comment">--save</span></code></pre><p>等待下载完成，之后就可以使用上面说过的</p><pre><code class="hljs dts">hexo clean<span class="hljs-variable">&amp;hexo</span> g<span class="hljs-variable">&amp;hexo</span> d</code></pre><p>来将本地的数据同步到Gitee上，以后每次推送新数据就在执行一下上面这行代码就可以进行推送了，推送完的数据可以在Gitee上看到：</p><p><img src="/img/blogCreate/upload2.png"></p><p>在Gitee上看到推送上来的数据后就可以开始部署页面了，在<strong>服务</strong>里找到<strong>Gitee Pages</strong>：</p><p><img src="/img/blogCreate/upload3.png"></p><p>第一次打开可能要实名认证啥的，认证完后会得到你的网站地址：</p><p><img src="/img/blogCreate/upload6.png"></p><p>将这个地址复制，再次打开本地文件夹根目录下的配置文件 _config.yml，将里面的<strong>url</strong>的值设置为你复制的网站：</p><p><img src="/img/blogCreate/upload7.png"></p><p>保存，再次进行本地文件的推送，这里要注意，每次有修改内容，推送完成后都要到Gitee Pages那里进行更新，这样才能够同步你的更改：</p><p><img src="/img/blogCreate/upload4.png"></p><p>到这里Hexo的部署和推送就都已经完成了，后面只需要在根目录下的/source/post文件夹内添加新的md文件作为你的博客内容即可。</p><h3 id=""><a href="#" class="headerlink" title=""></a></h3><p>本文参考了<a href="https://segmentfault.com/a/1190000018662692">https://segmentfault.com/a/1190000018662692</a>这篇文章，感谢大佬！！</p><h3 id="-1"><a href="#-1" class="headerlink" title=""></a></h3><p>写在后面：</p><p>前几年在大学的时候一直在想着搞一个个人博客，所以找了各种方法，又是买服务器，又是注册域名的。虽然当时学生党比较穷，但是好在腾讯云（没有打广告）有一个学生优惠，就搞了个10块一月的服务器，脑袋一热还去弄了弄域名，第一个域名不满意又去注册了一个。这个域名和服务器当时确实给我带来了很多欢乐，甚至还在当时班级同学面前小秀了一下（做了一个留言板的小网站），现在想想也确实不错。</p><p>但是毕业之后服务器到期，服务器的性能本身也不够好（1核1G1M带宽50G硬盘），用着用着就不想用了，主要是也没有什么太多的应用场景，初衷是搭建博客，但是到服务器到期结束也还是没搭起来。</p><p>20年的时候突然有想起来了要找个地方整理一下容易忘记的知识和技术，遂又想起来做博客，但是这次就找到了gitee+hexo的这种形式，这个真的是资深白嫖党的福音，不需要服务器，甚至还能独占一个域名，这多是一件美事。个人博客在之前已经搭好，所以这里是重新建了一个仓库来记录这样一个搭建过程。</p><p>欢迎大家访问我的博客 <a href="https://alanf.gitee.io/">织墨</a>  ！</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>git</category>
+      
+      <category>Hexo</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>git</tag>
+      
+      <tag>码云</tag>
+      
+      <tag>Hexo</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>本地电脑与gitee的连接</title>
+    <link href="/2022/03/17/%E6%9C%AC%E5%9C%B0git%E4%B8%8Egitee%E7%9A%84%E8%BF%9E%E6%8E%A5/"/>
+    <url>/2022/03/17/%E6%9C%AC%E5%9C%B0git%E4%B8%8Egitee%E7%9A%84%E8%BF%9E%E6%8E%A5/</url>
+    
+    <content type="html"><![CDATA[<p>电脑很久之前安装好了git和小乌龟，但是安装方法有点遗忘，今天正好参考网上大佬们的博客整理一下安装方法。</p><h2 id="git和小乌龟的下载"><a href="#git和小乌龟的下载" class="headerlink" title="git和小乌龟的下载"></a>git和小乌龟的下载</h2><p>这个不多说，网上找一下好了，都可以找到的（小乌龟：tortoiseGit)。</p><h2 id="本地电脑和码云的连接"><a href="#本地电脑和码云的连接" class="headerlink" title="本地电脑和码云的连接"></a>本地电脑和码云的连接</h2><p>这个是重点内容，稍微有些麻烦，主要分为以下几步。</p><h3 id="生成ssh密钥"><a href="#生成ssh密钥" class="headerlink" title="生成ssh密钥"></a>生成ssh密钥</h3><p>在小乌龟安装好后会附带一个小程序，在win菜单栏里可以找到</p><p><img src="/img/git/puttygen.png" alt="PuttyGen"></p><p>打开后是下面的界面</p><p><img src="/img/git/puttygen1.png" alt="PuttyGen"></p><p>（鼠标在红框里晃动可以加快生成公钥）</p><p>公钥生成后的图片</p><p><img src="/img/git/puttygen2.png" alt="PuttyGen"></p><ul><li>公钥：生成后保存</li><li>私钥：一定需要保存，并且保存后不要再到处移动了，建议放在一个不容易动的地方</li></ul><p>这个不多说，注册创建仓库后找到设置里就可以看到SSH公钥了，如图：</p><p><img src="/img/git/gitee.png" alt="gitee"></p><h3 id="本地电脑与gitee关联"><a href="#本地电脑与gitee关联" class="headerlink" title="本地电脑与gitee关联"></a>本地电脑与gitee关联</h3><blockquote><p>gitee上操作</p></blockquote><p>在gitee上需要先新建一个项目（仓库），然后仓库文件右上角有一个 <strong>克隆/下载</strong> 的按钮，然后选择需要的连接方式，一般都是ssh，这样gitee方面的准备已经完成了。</p><blockquote><p>本地电脑上操作</p></blockquote><p>找到一个文件夹（或者新建一个），在这个文件夹里右键菜单</p><p><img src="/img/git/local1.png" alt="local"></p><p>点击之后此文件夹会多出一个隐藏文件夹 .git ，这里存放了git相关的配置文件，不能乱动，否则会导致无法使用。</p><p>然后在此仓库文件夹下再次右键，找到设置</p><p><img src="/img/git/local2.png" alt="local"></p><p>找到远端</p><p><img src="/img/git/local3.png" alt="local"></p><p>1(Remote):随便取个名字,可以用项目名(自己理解就是远端仓库的代号)</p><p>2和3(URL和Push URL):复制码云上新建项目的ssh地址就行.</p><p>4(Putty):导入PuTTYgen生成的私钥文件(这就是那个重点)</p><p>之后点击确定即可，这样本地和gitee的仓库连接就完成了。</p><h5 id=""><a href="#" class="headerlink" title=""></a></h5><p>本文参考和部分图片来自：</p><p><a href="https://blog.csdn.net/k_y_lee/article/details/80841628">https://blog.csdn.net/k_y_lee/article/details/80841628</a></p><p>感谢大佬！</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>git</category>
+      
+      <category>转载</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>git</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Excel常用函数</title>
+    <link href="/2021/01/31/Excel%E5%B8%B8%E7%94%A8%E5%87%BD%E6%95%B0/"/>
+    <url>/2021/01/31/Excel%E5%B8%B8%E7%94%A8%E5%87%BD%E6%95%B0/</url>
+    
+    <content type="html"><![CDATA[<h2 id="vlookup函数"><a href="#vlookup函数" class="headerlink" title="vlookup函数"></a>vlookup函数</h2><h3 id="使用场景"><a href="#使用场景" class="headerlink" title="使用场景"></a>使用场景</h3><p>vlookup函数通常用于数据的匹配，从一堆数据里查找和当前行内某个单元格值一样的数据。</p><p>例如有如下场景：</p><p><img src="/img/excelFunction/vlookup1.png" alt="vlookup1"></p><p>左侧是一组数据源，想要找到右侧的姓名在左侧数据源中对应的年龄就可以使用vlookup函数进行匹配。</p><h3 id="参数介绍"><a href="#参数介绍" class="headerlink" title="参数介绍"></a>参数介绍</h3><p>vlookup函数中有四个参数：</p><p><img src="/img/excelFunction/vlookup2.png" alt="vlookup2"></p><p>分别是（查找值，查找范围，查找列的序号，匹配规则）<br>本案例中可以这样填写：</p><p><img src="/img/excelFunction/vlookup3.png" alt="vlookup3"></p><p>下面根据本案例的实例依次解释一下各个参数：<br>查找值：</p><blockquote><p>就是需要进行匹配的值，这里是“马六”这个姓名需要匹配数值，所以这里就是“马六”，也就是E2这个单元格。</p></blockquote><p>查找范围：</p><blockquote><p>就是数据源，这里就是整个数据表里的数据，即A2到B6这个范围内的数据，这里注意要<strong>使用绝对引用</strong>，加上$符号，不然查找下面的数据时，查找范围会跟着变。</p></blockquote><p>查找列的序号：</p><blockquote><p>这个序号的值是相对于你选中的查找范围也就是第二个参数而言的，你想要让当前这个单元格显示什么值你就在这里选择第几列——比如这里需要显示姓名对应的年龄，我们指定的查找范围中，年龄这一列是整个查找范围的第2列，所以这里我们填“2”。</p></blockquote><p>匹配规则：</p><blockquote><p>这是一个布尔值，False表示精确匹配，即你要查找的单元格和查找范围内的单元格里的内容必须完全一样（多一个空格都不可以）；True表示近似匹配，即有就可以，不需要完全一致。<strong>一般我们采用精确匹配，也就是False。</strong></p></blockquote><p><img src="/img/excelFunction/vlookup4.png" alt="vlookup4"><br>完成一个后，剩下的只要拖动填充即可。</p><h2 id="iferror函数"><a href="#iferror函数" class="headerlink" title="iferror函数"></a>iferror函数</h2><h3 id="使用场景-1"><a href="#使用场景-1" class="headerlink" title="使用场景"></a>使用场景</h3><p>这个函数比较简单，也比较容易理解，if即如果，error即错误，这个函数就是用来处理异常情况的，有点像面向对象编程里的try(){}catch(){}。<br>以上面那个场景为例，如果说，需要查找的数据在数据源里找不到，会怎么样呢？它就会出现这样的情况：</p><p><img src="/img/excelFunction/iferror1.png" alt="iferror1"></p><p>这样就很不便于批量数据的处理，这个时候就可以使用iferror函数来做一个异常情况的处理。</p><h3 id="参数介绍-1"><a href="#参数介绍-1" class="headerlink" title="参数介绍"></a>参数介绍</h3><p>iferror函数共有两个参数（正常的公式，公式错误时的值）<br><img src="/img/excelFunction/iferror2.png" alt="iferror2"></p><p>正常的公式</p><blockquote><p>正常的公式的意思就是本来要使用什么公式这里就放什么公式，比如说这里本来是要使用vlookup函数的，就可以在这里放入vlookup函数</p></blockquote><p>公式错误时的值</p><blockquote><p>即第一个参数中的公式如果产生了错误（比如在使用vlookup函数没有匹配到值是就会产生错误），在当前单元格应该显示的值，如果想要让它为空，就可以填””<strong>（英文的双引号）</strong></p></blockquote><p>比如vlookup例子中使用了iferror，就会变成这样：</p><p><img src="/img/excelFunction/iferror3.png" alt="iferror3"></p><p>查找错误后填入的值即为我们设定好的””，也就是空值。</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>Excel</category>
+      
+      <category>Excel函数</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Excel</tag>
+      
+      <tag>Excel函数</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Oracle基本操作</title>
+    <link href="/2021/01/26/Oracle%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/"/>
+    <url>/2021/01/26/Oracle%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/</url>
+    
+    <content type="html"><![CDATA[<h2 id="创建用户、表空间、分配权限"><a href="#创建用户、表空间、分配权限" class="headerlink" title="创建用户、表空间、分配权限"></a><a href="https://www.cnblogs.com/xmaomao/p/3273102.html">创建用户、表空间、分配权限</a></h2><pre><code class="hljs pgsql"><span class="hljs-keyword">SQL</span>&gt; <span class="hljs-keyword">create</span> <span class="hljs-keyword">temporary</span> <span class="hljs-keyword">tablespace</span> van_temp  <span class="hljs-number">2</span>  tempfile <span class="hljs-string">&#x27;C:\app\Alan\product\oracleData\ctp\van_temp.dbf&#x27;</span>  <span class="hljs-number">3</span>  size <span class="hljs-number">50</span>m  <span class="hljs-number">4</span>  autoextend <span class="hljs-keyword">on</span>  <span class="hljs-number">5</span>  next <span class="hljs-number">50</span>m maxsize <span class="hljs-number">20480</span>m  <span class="hljs-number">6</span>  extent management <span class="hljs-keyword">local</span>;表空间已创建。<span class="hljs-keyword">SQL</span>&gt; <span class="hljs-keyword">create</span> <span class="hljs-keyword">tablespace</span> van_data  <span class="hljs-number">2</span>  logging  <span class="hljs-number">3</span>  datafile <span class="hljs-string">&#x27;C:\app\Alan\product\oracleData\ctp\van_data.dbf&#x27;</span>  <span class="hljs-number">4</span>  size <span class="hljs-number">50</span>m  <span class="hljs-number">5</span>  autoextend <span class="hljs-keyword">on</span>  <span class="hljs-number">6</span>  next <span class="hljs-number">50</span>m maxsize <span class="hljs-number">20480</span>m  <span class="hljs-number">7</span>  extent management <span class="hljs-keyword">local</span>;表空间已创建。<span class="hljs-keyword">SQL</span>&gt; <span class="hljs-keyword">create</span> <span class="hljs-keyword">user</span> van identified <span class="hljs-keyword">by</span> admin123  <span class="hljs-number">2</span>  <span class="hljs-keyword">default</span> <span class="hljs-keyword">tablespace</span> van_data  <span class="hljs-number">3</span>  <span class="hljs-keyword">temporary</span> <span class="hljs-keyword">tablespace</span> van_temp;用户已创建。<span class="hljs-keyword">SQL</span>&gt; <span class="hljs-keyword">grant</span> <span class="hljs-keyword">connect</span>,resource,dba <span class="hljs-keyword">to</span> van;授权成功。//查询临时文件存放位置<span class="hljs-keyword">select</span> <span class="hljs-type">name</span> <span class="hljs-keyword">from</span> v$tempfile;//查询数据文件存放位置<span class="hljs-keyword">select</span> <span class="hljs-type">name</span> <span class="hljs-keyword">from</span> v$datafile;//修改用户表空间<span class="hljs-keyword">alter</span> <span class="hljs-keyword">user</span> van <span class="hljs-keyword">default</span> <span class="hljs-keyword">tablespace</span> van_data;//修改用户临时表空间<span class="hljs-keyword">alter</span> <span class="hljs-keyword">user</span> van <span class="hljs-keyword">temporary</span> <span class="hljs-keyword">tablespace</span> van_temp;</code></pre><h2 id="创建Directory"><a href="#创建Directory" class="headerlink" title="创建Directory"></a><a href="https://www.cnblogs.com/zougang/p/directory.html">创建Directory</a></h2><p>1、新建directory的语法</p><pre><code class="hljs n1ql"><span class="hljs-keyword">CREATE</span> [<span class="hljs-keyword">OR</span> <span class="hljs-built_in">REPLACE</span>] DIRECTORY directory <span class="hljs-keyword">AS</span> <span class="hljs-string">&#x27;pathname&#x27;</span>;</code></pre><p>例如： </p><pre><code class="hljs n1ql"><span class="hljs-keyword">create</span> <span class="hljs-keyword">or</span> <span class="hljs-built_in">replace</span> directory dump_dir <span class="hljs-keyword">as</span> <span class="hljs-string">&#x27;D:\dump\dir&#x27;</span>;</code></pre><p>这样把目录d:\dump\dir设置成dump_dir代表的directory </p><p>2、查询当前已有的directory </p><pre><code class="hljs axapta"><span class="hljs-keyword">select</span> * <span class="hljs-keyword">from</span> dba_directories;</code></pre><p>3、给制定用户赋权</p><pre><code class="hljs sql"><span class="hljs-keyword">grant</span> read,write <span class="hljs-keyword">on</span> directory dump_dir <span class="hljs-keyword">to</span> user01<span class="hljs-comment">--dumo_dir=&gt;已有的directory</span><span class="hljs-comment">--user01=&gt;要赋权的用户</span></code></pre><p>4、删除 </p><pre><code class="hljs abnf">drop directory dump_dir<span class="hljs-comment">;</span></code></pre><h2 id="导入dmp文件"><a href="#导入dmp文件" class="headerlink" title="导入dmp文件"></a><a href="https://www.cnblogs.com/zuiyue_jing/p/10635045.html">导入dmp文件</a></h2><pre><code class="hljs sql">impdp username<span class="hljs-operator">/</span>password<span class="hljs-variable">@ORCL</span> DIRECTORY<span class="hljs-operator">=</span>dir DUMPFILE<span class="hljs-operator">=</span>testFile.dmp REMAP_TABLESPACE<span class="hljs-operator">=</span>old_tableSpace:new_tableSpace REMAP_SCHEMA<span class="hljs-operator">=</span>old_user:new_user<span class="hljs-comment">--username=&gt;用户名</span><span class="hljs-comment">--password=&gt;密码</span><span class="hljs-comment">--ORCL=&gt;主机名</span><span class="hljs-comment">--dir=&gt;Directory名</span><span class="hljs-comment">--testFile=&gt;文件名，需要放在Directory指向的目录下</span><span class="hljs-comment">--REMAP_TABLESPACE=&gt;原有tableSpace名称：新tableSpace名称</span><span class="hljs-comment">--REMAP_SCHEMA=&gt;原有用户名：新用户名</span>impdp van<span class="hljs-operator">/</span>admin123<span class="hljs-variable">@orcl</span> DIRECTORY<span class="hljs-operator">=</span>ctpBase_dir dumpfile<span class="hljs-operator">=</span>testData.dmpimpdp ctpBase<span class="hljs-operator">/</span>admin123<span class="hljs-variable">@orcl</span> DIRECTORY<span class="hljs-operator">=</span>ctpBase_dir dumpfile<span class="hljs-operator">=</span>testData.dmp REMAP_TABLESPACE<span class="hljs-operator">=</span>TBS_REPORT:ctpBase_data REMAP_SCHEMA<span class="hljs-operator">=</span>VAN:ctpBase</code></pre><h2 id="序列操作"><a href="#序列操作" class="headerlink" title="序列操作"></a>序列操作</h2><pre><code class="hljs pgsql"><span class="hljs-comment">--获取指定的序列值，每次查询后都会自增</span><span class="hljs-keyword">SELECT</span> UCP.SEQ_SYNC_COMMANDNO.NEXTVAL <span class="hljs-keyword">FROM</span> DUAL<span class="hljs-comment">--查看所有序列</span><span class="hljs-keyword">select</span> * <span class="hljs-keyword">from</span> user_sequences <span class="hljs-comment">--创建序列</span><span class="hljs-keyword">create</span> <span class="hljs-keyword">sequence</span> UCP.SEQ_SYNC_COMMANDNO <span class="hljs-keyword">increment</span> <span class="hljs-keyword">by</span> <span class="hljs-number">1</span> <span class="hljs-keyword">start</span> <span class="hljs-keyword">with</span> <span class="hljs-number">1</span> nomaxvalue<span class="hljs-comment">--删除序列</span><span class="hljs-keyword">drop</span> <span class="hljs-keyword">sequence</span> SEQ_SYNC_COMMANDNO</code></pre><h2 id="几种错误原因"><a href="#几种错误原因" class="headerlink" title="几种错误原因"></a>几种错误原因</h2><h3 id="impdp命令使用错误"><a href="#impdp命令使用错误" class="headerlink" title="impdp命令使用错误"></a>impdp命令使用错误</h3><p>(图片来源：<a href="https://www.cnblogs.com/zuiyue_jing/p/10635045.html">https://www.cnblogs.com/zuiyue_jing/p/10635045.html</a>)</p><p><img src="/img/Oracle%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/%E9%94%99%E8%AF%AF%E5%9B%BE%E7%89%871.png" alt="错误图片展示" title="错误图片展示"></p><p>出现这种错误表示要导入的文件路径不正确，不能直接把文件的绝对路径写入，应该使用Directory的方式来导入</p><h3 id="目录没有赋权限"><a href="#目录没有赋权限" class="headerlink" title="目录没有赋权限"></a>目录没有赋权限</h3><p>(图片来源：<a href="https://www.cnblogs.com/zuiyue_jing/p/10631906.html">https://www.cnblogs.com/zuiyue_jing/p/10631906.html</a>)</p><p><img src="/img/Oracle%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/%E9%94%99%E8%AF%AF%E5%9B%BE%E7%89%872.png" alt="错误图片展示" title="错误图片展示"></p><pre><code class="hljs mipsasm">连接到: <span class="hljs-keyword">Oracle </span>Database <span class="hljs-number">11</span>g Enterprise Edition Release <span class="hljs-number">11</span>.<span class="hljs-number">2</span>.<span class="hljs-number">0</span>.<span class="hljs-number">4</span>.<span class="hljs-number">0</span> -<span class="hljs-number">64</span>bit ProductionWith the Partitioning, OLAP, Data Mining <span class="hljs-keyword">and </span>Real Application Testing options<span class="hljs-keyword">ORA-39002: </span>操作无效<span class="hljs-keyword">ORA-39070: </span>无法打开日志文件。<span class="hljs-keyword">ORA-29283: </span>文件操作无效<span class="hljs-keyword">ORA-06512: </span>在 <span class="hljs-string">&quot;SYS.UTL_FILE&quot;</span>, line <span class="hljs-number">536</span><span class="hljs-keyword">ORA-29283: </span>文件操作无效等类似的错误。</code></pre><p>提示类似这种类型的错误表示当前用户没有访问指定DIRECTORY的权限，需要进入Sys用户给这个用户赋权，赋权语句：</p><pre><code class="hljs pgsql"><span class="hljs-keyword">GRANT</span> <span class="hljs-keyword">read</span>,<span class="hljs-keyword">write</span> <span class="hljs-keyword">ON</span> DIRECTORY dir_dump <span class="hljs-keyword">TO</span> <span class="hljs-built_in">public</span>;</code></pre>]]></content>
+    
+    
+    <categories>
+      
+      <category>数据库</category>
+      
+      <category>Oracle</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>数据库</tag>
+      
+      <tag>Oracle</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Oracle数据库出现 “记录被另一个用户锁住”的解决方案</title>
+    <link href="/2021/01/26/oracle%E6%95%B0%E6%8D%AE%E5%BA%93%E5%87%BA%E7%8E%B0%20%E2%80%9C%E8%AE%B0%E5%BD%95%E8%A2%AB%E5%8F%A6%E4%B8%80%E4%B8%AA%E7%94%A8%E6%88%B7%E9%94%81%E4%BD%8F%E2%80%9D%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/"/>
+    <url>/2021/01/26/oracle%E6%95%B0%E6%8D%AE%E5%BA%93%E5%87%BA%E7%8E%B0%20%E2%80%9C%E8%AE%B0%E5%BD%95%E8%A2%AB%E5%8F%A6%E4%B8%80%E4%B8%AA%E7%94%A8%E6%88%B7%E9%94%81%E4%BD%8F%E2%80%9D%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</url>
+    
+    <content type="html"><![CDATA[<p>登录管理员账号进行如下操作</p><pre><code class="hljs sql"><span class="hljs-comment">-- 查找被锁住的表及其sid和serial#</span><span class="hljs-keyword">select</span> object_name,machine,s.sid,s.serial# <span class="hljs-keyword">from</span> gv$locked_object l,dba_objects o ,gv$session s<span class="hljs-keyword">where</span> l.OBJECT_ID<span class="hljs-operator">=</span>o.object_id<span class="hljs-keyword">and</span> l.session_id<span class="hljs-operator">=</span>s.sid<span class="hljs-comment">--释放SESSION的SQL</span><span class="hljs-comment">--alter system kill session &#x27;sid,serial#&#x27;</span><span class="hljs-keyword">alter</span> <span class="hljs-keyword">system</span> kill session <span class="hljs-string">&#x27;18,5995&#x27;</span></code></pre><p>更新数据库时注意事项</p><blockquote><p>pl/sql中在执行更新操作之后，要记得点击在左上角的提交(F10)，不然就会产生锁住的情况</p></blockquote>]]></content>
+    
+    
+    <categories>
+      
+      <category>数据库</category>
+      
+      <category>Oracle</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>数据库</tag>
+      
+      <tag>Oracle</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>MarkDown学习笔记</title>
+    <link href="/2021/01/25/MarkDownLearning/"/>
+    <url>/2021/01/25/MarkDownLearning/</url>
+    
+    <content type="html"><![CDATA[<h1 id="MarkDown学习笔记"><a href="#MarkDown学习笔记" class="headerlink" title="MarkDown学习笔记"></a>MarkDown学习笔记</h1><p>标签（空格分隔）： 演示</p><hr><p>[TOC]</p><h2 id="基本功能"><a href="#基本功能" class="headerlink" title="基本功能"></a>基本功能</h2><h3 id="标题"><a href="#标题" class="headerlink" title="标题"></a><strong>标题</strong></h3><pre><code class="hljs clean"># 这是一级标题## 这是二级标题### 这是三级标题#### 这是四级标题##### 这是五级标题###### 这是六级标题</code></pre><h3 id="文字效果"><a href="#文字效果" class="headerlink" title="文字效果"></a><strong>文字效果</strong></h3><pre><code class="hljs markdown"><span class="hljs-strong">**这是加粗的文字**</span><span class="hljs-emphasis">*这是倾斜的文字*</span><span class="hljs-strong">**<span class="hljs-emphasis">*这是斜体加粗的文字*</span>**</span>~~这是加删除线的文字~~</code></pre><p><strong>这是加粗的文字</strong><br><em>这是倾斜的文字</em><br><em><strong>这是斜体加粗的文字</strong></em><br><del>这是加删除线的文字</del></p><h3 id="引用效果"><a href="#引用效果" class="headerlink" title="引用效果"></a><strong>引用效果</strong></h3><pre><code class="hljs yaml"><span class="hljs-string">&gt;引用内容</span><span class="hljs-meta">---</span><span class="hljs-string">&gt;引用内容（可嵌套）</span><span class="hljs-string">&gt;&gt;引用内容（可嵌套）</span><span class="hljs-string">&gt;&gt;&gt;引用内容（可嵌套）</span><span class="hljs-string">&gt;&gt;&gt;</span><span class="hljs-string">&gt;&gt;&gt;&gt;引用内容（可嵌套）</span></code></pre><blockquote><p>引用内容</p></blockquote><hr><blockquote><p>引用内容（可嵌套）</p><blockquote><p>引用内容（可嵌套）</p><blockquote><p>引用内容（可嵌套）</p><blockquote><p>引用内容（可嵌套）</p></blockquote></blockquote></blockquote></blockquote><h3 id="分割线"><a href="#分割线" class="headerlink" title="分割线"></a><strong>分割线</strong></h3><p>三个或三个以上的’*’或’-‘</p><pre><code class="hljs yaml"><span class="hljs-string">***</span><span class="hljs-meta">---</span><span class="hljs-meta"></span><span class="hljs-string">*****</span><span class="hljs-string">----</span></code></pre><hr><hr><hr><hr><h3 id="图片和超链接"><a href="#图片和超链接" class="headerlink" title="图片和超链接"></a><strong>图片和超链接</strong></h3><h4 id="图片："><a href="#图片：" class="headerlink" title="图片："></a>图片：</h4><pre><code class="hljs erlang-repl">![图片alt](图片地址 <span class="hljs-string">&quot;图片title&quot;</span>)</code></pre><p><strong>本地图片</strong></p><pre><code class="hljs less">!<span class="hljs-selector-attr">[你的名字]</span>(<span class="hljs-attribute">D</span>:\...\img\MarkDownLearning\Yourname.png <span class="hljs-string">&quot;你的名字&quot;</span>)</code></pre><p><img src="/img/MarkDownLearning/YourName2.png" alt="你的名字" title="你的名字"></p><p><strong>网络图片</strong></p><pre><code class="hljs awk">![起风了](https:<span class="hljs-regexp">//g</span>ss0.baidu.com<span class="hljs-regexp">/70cFfyinKgQFm2e88IuM_a/</span>forum<span class="hljs-regexp">/w=580/</span>sign=da217b5f4b166d223877159c76220945/c5b9dc33c895d143229118b77bf082025baf0759.jpg <span class="hljs-string">&quot;起风了&quot;</span>)</code></pre><p><img src="https://gss0.baidu.com/70cFfyinKgQFm2e88IuM_a/forum/w=580/sign=da217b5f4b166d223877159c76220945/c5b9dc33c895d143229118b77bf082025baf0759.jpg" alt="起风了" title="起风了"></p><h5 id="超链接"><a href="#超链接" class="headerlink" title="超链接"></a>超链接</h5><pre><code class="hljs scheme">[<span class="hljs-name">超链接名</span>](<span class="hljs-name">超链接地址</span> <span class="hljs-string">&quot;超链接title&quot;</span>)</code></pre><p><a href="http://www.baidu.com/">百度官网</a></p><h3 id="列表"><a href="#列表" class="headerlink" title="列表"></a><strong>列表</strong></h3><p>无序列表</p><pre><code class="hljs">无序列表用 - + * 任何一种都可以</code></pre><p>例：</p><pre><code class="hljs markdown"><span class="hljs-bullet">*</span> 列表内容*<span class="hljs-bullet">*</span> 列表内容*<span class="hljs-bullet">-</span> 列表内容-<span class="hljs-bullet">-</span> 列表内容-<span class="hljs-bullet">+</span> 列表内容+<span class="hljs-bullet">+</span> 列表内容+<span class="hljs-bullet">*</span> 列表内容*<span class="hljs-bullet">-</span> 列表内容-<span class="hljs-bullet">+</span> 列表内容+</code></pre><ul><li>列表内容*</li><li>列表内容*</li></ul><ul><li>列表内容-</li><li>列表内容-</li></ul><ul><li>列表内容+</li><li>列表内容+</li></ul><ul><li>列表内容*</li></ul><ul><li>列表内容-</li></ul><ul><li>列表内容+</li></ul><p>有序列表</p><pre><code class="hljs erlang">有序列表只能用 数字+ ,数字值和列表数字值无关，都是按照指定顺序排列的.</code></pre><p>例：</p><pre><code class="hljs markdown"><span class="hljs-bullet">1.</span> 列表内容<span class="hljs-bullet">2.</span> 列表内容<span class="hljs-bullet">5.</span> 列表内容<span class="hljs-bullet">6.</span> 列表内容<span class="hljs-bullet">1.</span> 列表内容<span class="hljs-bullet">7.</span> 列表内容<span class="hljs-bullet">3.</span> 列表内容</code></pre><ol><li>列表内容</li><li>列表内容</li><li>列表内容</li><li>列表内容</li><li>列表内容</li><li>列表内容</li><li>列表内容</li></ol><p>有序列表嵌套无序列表</p><pre><code class="hljs markdown"><span class="hljs-bullet">1.</span> 有序列表<span class="hljs-bullet">    *</span> 无序列表<span class="hljs-bullet">    *</span> 无序列表<span class="hljs-bullet">2.</span> 有序列表<span class="hljs-bullet">    *</span> 无序列表<span class="hljs-bullet">    *</span> 无序列表</code></pre><ol><li>有序列表<ul><li>无序列表</li><li>无序列表</li></ul></li><li>有序列表<ul><li>无序列表</li><li>无序列表</li></ul></li></ol><p>无序列表嵌套有序列表</p><pre><code class="hljs markdown"><span class="hljs-bullet">*</span> 无序列表<span class="hljs-bullet">    1.</span> 有序列表<span class="hljs-bullet">    2.</span> 有序列表<span class="hljs-bullet">*</span> 无序列表<span class="hljs-bullet">    1.</span> 有序列表<span class="hljs-bullet">    2.</span> 有序列表</code></pre><ul><li>无序列表<ol><li>有序列表</li><li>有序列表</li></ol></li><li>无序列表<ol><li>有序列表</li><li>有序列表</li></ol></li></ul><h3 id="表格"><a href="#表格" class="headerlink" title="表格"></a><strong>表格</strong></h3><pre><code>表头1|表头2|表头3:-|:-:|-:1，1|1，2|1，32，1|2，2|2，33，1|3，2|3，3</code></pre><table><thead><tr><th align="left">表头1</th><th align="center">表头2</th><th align="right">表头3</th></tr></thead><tbody><tr><td align="left">1，1</td><td align="center">1，2</td><td align="right">1，3</td></tr><tr><td align="left">2，1</td><td align="center">2，2</td><td align="right">2，3</td></tr><tr><td align="left">3，1</td><td align="center">3，2</td><td align="right">3，3</td></tr></tbody></table><h3 id="代码插入"><a href="#代码插入" class="headerlink" title="代码插入"></a><strong>代码插入</strong></h3><p>单行</p><p>第一行代码<code>sudo rm -rf</code>（一组<code> </code>）.</p><p>多行（一组<code> </code>）</p><pre><code class="hljs abnf">function fun()&#123;     a<span class="hljs-operator">=</span><span class="hljs-number">1</span><span class="hljs-comment">;</span>     b<span class="hljs-operator">=</span><span class="hljs-number">2</span><span class="hljs-comment">;</span>     s<span class="hljs-operator">=</span><span class="hljs-string">&quot;这是一行代码&quot;</span><span class="hljs-comment">;</span>&#125;</code></pre><p>缩进</p><pre><code>function fun()&#123;     a=1;     b=2;     s=&quot;这是一行代码&quot;;&#125;    </code></pre><h2 id="进阶功能"><a href="#进阶功能" class="headerlink" title="进阶功能"></a><strong>进阶功能</strong></h2><h3 id="绘图"><a href="#绘图" class="headerlink" title="绘图"></a><strong>绘图</strong></h3><p>流程图1</p><pre><code class="hljs flow">st=&gt;start: 开始op=&gt;operation: My Operationcond=&gt;condition: Yes or No?e=&gt;endst-&gt;op-&gt;condcond(yes)-&gt;econd(no)-&gt;op</code></pre><p>流程图2</p><pre><code class="hljs flow">st=&gt;start: Start:&gt;https://www.zybuluo.comio=&gt;inputoutput: verificationop=&gt;operation: Your Operationcond=&gt;condition: Yes or No?sub=&gt;subroutine: Your Subroutinee=&gt;endst-&gt;io-&gt;op-&gt;condcond(yes)-&gt;econd(no)-&gt;sub-&gt;io</code></pre><p>UML图1</p><pre><code class="hljs sequence">A-&gt;B: B你好吗?（请求）Note right of B: B的描述Note left of A: A的描述(提示)B--&gt;A: 我很好(响应)A-&gt;B: 你真的好吗？</code></pre><p>UML图2</p><pre><code class="hljs sequence">Title: 标题：复杂使用A-&gt;B: B你好吗?（请求）Note right of B: B的描述Note left of A: A的描述(提示)B--&gt;A: 我很好(响应)B-&gt;C: 你好吗C--&gt;&gt;A: B找我了A-&gt;B: 你真的好吗？Note over C,B: 我们是朋友participant DNote right of D: 没人陪我玩</code></pre><h3 id="数学公式"><a href="#数学公式" class="headerlink" title="数学公式"></a><strong>数学公式</strong></h3><p>$$<br>\mathbf{V}_1 \times \mathbf{V}_2 =  \begin{vmatrix}<br>\mathbf{i} &amp; \mathbf{j} &amp; \mathbf{k} \<br>\frac{\partial X}{\partial u} &amp;  \frac{\partial Y}{\partial u} &amp; 0 \<br>\frac{\partial X}{\partial v} &amp;  \frac{\partial Y}{\partial v} &amp; 0 \<br>\end{vmatrix}<br>$$</p><h3 id="待办事项清单"><a href="#待办事项清单" class="headerlink" title="待办事项清单"></a><strong>待办事项清单</strong></h3><pre><code class="hljs markdown"><span class="hljs-bullet">-</span> [ ] <span class="hljs-strong">**今日工作内容**</span><span class="hljs-bullet">    -</span> [ ] 完成xxx的开发<span class="hljs-bullet">    -</span> [ ] 完成xxx的开发<span class="hljs-bullet">    -</span> [x] 完成xxx的开发<span class="hljs-bullet">    -</span> [x] 改进xxx功能<span class="hljs-bullet">-</span> [x] 完成xxx的开发<span class="hljs-bullet">        -</span> [x] 完成xxx的开发<span class="hljs-bullet">-</span> [ ] <span class="hljs-strong">**今日学习内容**</span><span class="hljs-bullet">    -</span> [ ] 任务1<span class="hljs-bullet">    -</span> [ ] 任务2<span class="hljs-bullet">    -</span> [x] 任务3</code></pre><ul><li><input disabled="" type="checkbox"> <strong>今日工作内容</strong><ul><li><input disabled="" type="checkbox"> 完成xxx的开发</li><li><input disabled="" type="checkbox"> 完成xxx的开发</li><li><input checked="" disabled="" type="checkbox"> 完成xxx的开发</li><li><input checked="" disabled="" type="checkbox"> 改进xxx功能<ul><li><input checked="" disabled="" type="checkbox"> 完成xxx的开发</li><li><input checked="" disabled="" type="checkbox"> 完成xxx的开发</li></ul></li></ul></li><li><input disabled="" type="checkbox"> <strong>今日学习内容</strong><ul><li><input disabled="" type="checkbox"> 任务1</li><li><input disabled="" type="checkbox"> 任务2</li><li><input checked="" disabled="" type="checkbox"> 任务3</li></ul></li></ul><h3 id="注解"><a href="#注解" class="headerlink" title="注解"></a><strong>注解</strong></h3><pre><code class="hljs cos">需要注明的文本 [<span class="hljs-symbol">^MarkDown</span>]。</code></pre><p>需要注明的文本 <a href="%E8%BF%99%E6%98%AF%E6%B3%A8%E8%A7%A3%E5%86%85%E5%AE%B9%E3%80%82">^MarkDown</a>。</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>MarkDown</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>MarkDown</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>JS转换日期格式</title>
+    <link href="/2021/01/25/JS%E8%BD%AC%E6%8D%A2%E6%97%A5%E6%9C%9F%E6%A0%BC%E5%BC%8F/"/>
+    <url>/2021/01/25/JS%E8%BD%AC%E6%8D%A2%E6%97%A5%E6%9C%9F%E6%A0%BC%E5%BC%8F/</url>
+    
+    <content type="html"><![CDATA[<p>Js的日期格式是类似这样的</p><pre><code class="hljs apache"><span class="hljs-attribute">Mon</span> Jun <span class="hljs-number">08</span> <span class="hljs-number">2020</span> <span class="hljs-number">19</span>:<span class="hljs-number">10</span>:<span class="hljs-number">47</span> GMT+<span class="hljs-number">0800</span> (中国标准时间)</code></pre><p>使用这样的格式直接截取字符串获取时间日期的话不是很好获取，所以需要进行一些转换：</p><pre><code class="hljs javascript"><span class="hljs-attr">formatDate</span>:<span class="hljs-keyword">function</span>(<span class="hljs-params">originalDate</span>)&#123;    <span class="hljs-keyword">if</span>(originalDate === <span class="hljs-literal">null</span> || originalDate ===<span class="hljs-string">&#x27;&#x27;</span>)&#123;        <span class="hljs-keyword">return</span> <span class="hljs-string">&#x27;&#x27;</span>;    &#125;        <span class="hljs-keyword">const</span> tempIntYear = originalDate.<span class="hljs-title function_">getFullYear</span>();    <span class="hljs-comment">//这里Month是从0开始计算的，所以转换的时候需要给这个值加上1</span>    <span class="hljs-keyword">const</span> tempIntMonth = originalDate.<span class="hljs-title function_">getMonth</span>()+<span class="hljs-number">1</span>;    <span class="hljs-keyword">const</span> tempIntDate = originalDate.<span class="hljs-title function_">getDate</span>();        <span class="hljs-keyword">let</span> tempMonth = tempIntMonth.<span class="hljs-title function_">toString</span>();    <span class="hljs-keyword">let</span> tempDate = tempIntDate.<span class="hljs-title function_">toString</span>();        <span class="hljs-comment">//如果月份和日期只有一位的话</span>    <span class="hljs-keyword">if</span>(tempIntMonth &lt; <span class="hljs-number">10</span>)&#123;        tempMonth = <span class="hljs-string">&#x27;0&#x27;</span> + tempIntMonth;    &#125;    <span class="hljs-keyword">if</span>(tempIntDate &lt;<span class="hljs-number">10</span>)&#123;        tempDate = <span class="hljs-string">&#x27;0&#x27;</span> + tempIntDate;    &#125;    <span class="hljs-comment">//补成yyyyMMdd格式</span>    <span class="hljs-keyword">const</span> returnMsg = tempIntYear.<span class="hljs-title function_">toString</span>() + tempMonth + tempDate;    <span class="hljs-keyword">return</span> returnMsg;&#125;</code></pre>]]></content>
+    
+    
+    <categories>
+      
+      <category>Javascript</category>
+      
+      <category>前端</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Javascript</tag>
+      
+      <tag>时间日期转换</tag>
+      
+      <tag>前端</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>xml解析和sql连表</title>
+    <link href="/2021/01/19/xml%E8%A7%A3%E6%9E%90%E5%92%8Csql%E8%BF%9E%E8%A1%A8%E7%AC%94%E8%AE%B0/"/>
+    <url>/2021/01/19/xml%E8%A7%A3%E6%9E%90%E5%92%8Csql%E8%BF%9E%E8%A1%A8%E7%AC%94%E8%AE%B0/</url>
+    
+    <content type="html"><![CDATA[<h1 id="在java中使用sax解析xml文件"><a href="#在java中使用sax解析xml文件" class="headerlink" title="在java中使用sax解析xml文件"></a>在java中使用sax解析xml文件</h1><p>引用的命名空间</p><pre><code class="hljs dart"><span class="hljs-keyword">import</span> org.dom4j.Document;<span class="hljs-keyword">import</span> org.dom4j.DocumentFactory;<span class="hljs-keyword">import</span> org.dom4j.<span class="hljs-built_in">Element</span>;<span class="hljs-keyword">import</span> org.dom4j.io.SAXReader;</code></pre><pre><code class="hljs java"><span class="hljs-type">SAXReader</span> <span class="hljs-variable">saxReader</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">SAXReader</span>();<span class="hljs-type">Document</span> <span class="hljs-variable">document</span> <span class="hljs-operator">=</span> saxReader.read(wrappedStream);<span class="hljs-type">Element</span> <span class="hljs-variable">infos</span> <span class="hljs-operator">=</span> document.getRootElement();<span class="hljs-keyword">for</span>(<span class="hljs-type">Iterator</span> <span class="hljs-variable">it</span> <span class="hljs-operator">=</span> infos.elementIterator(); it.hasNext();)&#123;col++;<span class="hljs-comment">//第一层循环取值</span><span class="hljs-type">Element</span> <span class="hljs-variable">info</span> <span class="hljs-operator">=</span> (Element) it.next();<span class="hljs-comment">//取数据</span>String combstrategytype=info.element(<span class="hljs-string">&quot;name&quot;</span>).getTextTrim();String combname=info.element(<span class="hljs-string">&quot;gender&quot;</span>).getTextTrim();String combsplitday=info.element(<span class="hljs-string">&quot;age&quot;</span>).getTextTrim();Element telephonelist= strategy.element(<span class="hljs-string">&quot;telephonelist&quot;</span>);<span class="hljs-comment">//第二层循环取值</span><span class="hljs-keyword">for</span>(<span class="hljs-type">Iterator</span> <span class="hljs-variable">itc</span> <span class="hljs-operator">=</span> telephonelist.elementIterator(); itc.hasNext();)&#123;Element childUnit=(Element)itc.next();String remark=childUnit.element(<span class="hljs-string">&quot;remark&quot;</span>).getTextTrim();String number=childUnit.element(<span class="hljs-string">&quot;number&quot;</span>).getTextTrim(); &#125;&#125;</code></pre><p>xml文件</p><pre><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">infos</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">info</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">name</span>&gt;</span>小明<span class="hljs-tag">&lt;/<span class="hljs-name">name</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">gender</span>&gt;</span>男<span class="hljs-tag">&lt;/<span class="hljs-name">gender</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">age</span>&gt;</span>28<span class="hljs-tag">&lt;/<span class="hljs-name">age</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">telephonelist</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">tel</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">remark</span>&gt;</span>公司<span class="hljs-tag">&lt;/<span class="hljs-name">remark</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">number</span>&gt;</span>123321456654<span class="hljs-tag">&lt;/<span class="hljs-name">number</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">tel</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">tel</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">remark</span>&gt;</span>家<span class="hljs-tag">&lt;/<span class="hljs-name">remark</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">number</span>&gt;</span>08886666<span class="hljs-tag">&lt;/<span class="hljs-name">number</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">tel</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">telephonelist</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">info</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">info</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">name</span>&gt;</span>小芳<span class="hljs-tag">&lt;/<span class="hljs-name">name</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">gender</span>&gt;</span>女<span class="hljs-tag">&lt;/<span class="hljs-name">gender</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">age</span>&gt;</span>22<span class="hljs-tag">&lt;/<span class="hljs-name">age</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">telephonelist</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">tel</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">remark</span>&gt;</span>公司<span class="hljs-tag">&lt;/<span class="hljs-name">remark</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">number</span>&gt;</span>19564897456<span class="hljs-tag">&lt;/<span class="hljs-name">number</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">tel</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">tel</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">remark</span>&gt;</span>家<span class="hljs-tag">&lt;/<span class="hljs-name">remark</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">number</span>&gt;</span>06668888<span class="hljs-tag">&lt;/<span class="hljs-name">number</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">tel</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">telephonelist</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">info</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">infos</span>&gt;</span></code></pre><h1 id="sql语句多条件查询"><a href="#sql语句多条件查询" class="headerlink" title="sql语句多条件查询"></a>sql语句多条件查询</h1><pre><code class="hljs sql"><span class="hljs-keyword">select</span><span class="hljs-built_in">CAST</span>(ipt.a <span class="hljs-keyword">as</span> <span class="hljs-type">FLOAT</span>)<span class="hljs-operator">+</span><span class="hljs-built_in">CAST</span>(ipt.b <span class="hljs-keyword">as</span> <span class="hljs-type">FLOAT</span>) <span class="hljs-keyword">as</span> &quot;ab&quot;,<span class="hljs-keyword">case</span> <span class="hljs-keyword">when</span> seas.days <span class="hljs-keyword">is</span> <span class="hljs-keyword">null</span> <span class="hljs-keyword">then</span> seas_all.days <span class="hljs-keyword">else</span> seas.days <span class="hljs-keyword">end</span> <span class="hljs-keyword">as</span> &quot;days&quot;<span class="hljs-keyword">from</span> position ipt<span class="hljs-keyword">left</span> <span class="hljs-keyword">join</span> (<span class="hljs-keyword">select</span> sys,inv,exc,sto,days <span class="hljs-keyword">from</span> tbseas) seas_all<span class="hljs-keyword">on</span> <span class="hljs-built_in">trim</span>(seas_all.sys)<span class="hljs-operator">=</span><span class="hljs-built_in">trim</span>(ipt.sys)<span class="hljs-keyword">and</span> <span class="hljs-built_in">trim</span>(seas_all.inv)<span class="hljs-operator">=</span><span class="hljs-built_in">trim</span>(ipt.inv)<span class="hljs-keyword">and</span> <span class="hljs-built_in">trim</span>(seas_all.exc)<span class="hljs-operator">=</span><span class="hljs-built_in">trim</span>(ipt.exc)<span class="hljs-keyword">and</span> seas_all.sto<span class="hljs-operator">=</span><span class="hljs-string">&#x27;*&#x27;</span><span class="hljs-keyword">left</span> <span class="hljs-keyword">join</span> (<span class="hljs-keyword">select</span> sys,inv,exc,sto,days <span class="hljs-keyword">from</span> tbseas) seas<span class="hljs-keyword">on</span> <span class="hljs-built_in">trim</span>(seas_all.sys)<span class="hljs-operator">=</span><span class="hljs-built_in">trim</span>(ipt.sys)<span class="hljs-keyword">and</span> <span class="hljs-built_in">trim</span>(seas_all.inv)<span class="hljs-operator">=</span><span class="hljs-built_in">trim</span>(ipt.inv)<span class="hljs-keyword">and</span> <span class="hljs-built_in">trim</span>(seas_all.exc)<span class="hljs-operator">=</span><span class="hljs-built_in">trim</span>(ipt.exc)<span class="hljs-keyword">and</span> <span class="hljs-built_in">trim</span>(seas.sto)<span class="hljs-operator">=</span><span class="hljs-built_in">trim</span>(ipt.sto)<span class="hljs-keyword">and</span> seas.sto<span class="hljs-operator">!=</span><span class="hljs-string">&#x27;*&#x27;</span><span class="hljs-keyword">where</span> <span class="hljs-number">1</span> <span class="hljs-operator">=</span> <span class="hljs-number">1</span></code></pre>]]></content>
+    
+    
+    <categories>
+      
+      <category>数据库</category>
+      
+      <category>SQL</category>
+      
+      <category>Java</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>数据库</tag>
+      
+      <tag>SQL</tag>
+      
+      <tag>Java</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  
+</search>
